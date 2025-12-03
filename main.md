@@ -11,4 +11,4 @@ Imagine your mission is to find your way from one article to another in a gigant
 
 Voici une figure interactive intégrée via un iframe :
 
-<iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>

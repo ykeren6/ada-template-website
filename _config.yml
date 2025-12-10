@@ -7,6 +7,4 @@ navigation:
     url: /
   - title: Example
     url: example
-  - title: Main
-    url: main
 

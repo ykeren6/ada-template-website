@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: test
 ---
 
 # Backtrack to the future

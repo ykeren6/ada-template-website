@@ -6,7 +6,7 @@ layout: full
 
 ## Chapter 1 : Finding your way in the big bad network
 
-Imagine this: you are given a map and you have to find your way from one point to the other. Pretty easy, right?
+Imagine this: you are an untrademarked, totally unspecified explorer and you are tasked with exploring an ancient ruin containing all the world's knowledge. You are given a map and you have to find your way from one point in the ruin to another. Pretty easy, right?
 
 Now imagine you are given this map:
 
@@ -19,7 +19,7 @@ This is the task given to you in the game Wikispeedia: you have to find your way
 
 Now that sounds pretty scary, we get it. 
 
-You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of users in Wikispeedia do just that.
+You could set out and get caught in dangerous traps. You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of explorers (or okay... just Wikiuspeedia nerds) do just that.
 
 ![Pie chart](figures/pie_chart_chap_1.png)
 
@@ -56,7 +56,9 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations.
 
 
-For exemple, when users are tasked with navigating from Science to Science, they tend to backtrack the most.
+For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most.
+
+Here are the top 5 articles that cause the most backtracking when they are the target of the path. 
 
 | Rank | Article | Category | 
 | :--- | :--- | :--- |
@@ -66,11 +68,9 @@ For exemple, when users are tasked with navigating from Science to Science, they
 | **4**| Borage | Science |
 | **5**| Lake_Victoria | Geography |
 
+In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. When you're not familiar with a destination, it's hard to find your way to it, right ? Players backtracked more when they were looking for these 5 articles in particular, perhaps because unfamiliarity with the subjects. 
 
-
-Here are the top 5 articles that cause the most backtracking when they are the target of the path. The score NormalizedCount was calculated by normalizing the number of paths with this article as a target that contained backtracking to the amount of times this article is a target in the path.
-
-In the list, the articles appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science.
+Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin)
 
 
 ## Chapter 4 : Will backtracking doom you to fail ?

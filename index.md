@@ -19,7 +19,7 @@ This is the task given to you in the game Wikispeedia: you have to find your way
 
 Now that sounds pretty scary, we get it. 
 
-You may want to go back, retrace your steps to create a better future (AKA reach the correct destination). And actually it turns out a lot of users in Wikispeedia do just that.
+You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of users in Wikispeedia do just that.
 
 ![Pie chart](figures/pie_chart_chap_1.png)
 
@@ -58,10 +58,17 @@ Both finished and unfinished paths seemed to carry more backtracking in the same
 
 For exemple, when users are tasked with navigating from Science to Science, they tend to backtrack the most.
 
-// Top 10 articles that cause most backtracks
+| Rank | Article | Category | 
+| :--- | :--- | :--- |
+| **1**| Morecambe_and_Wise | Everyday_life|
+| **2**| Felix_the_Cat | Everyday_life |
+| **3**| Nurse_sharks | Science |
+| **4**| Borage | Science |
+| **5**| Lake_Victoria | Geography |
 
 
-Here are the top 10 articles that cause the most backtracking when they are the target of the path. The score NormalizedCount was calculated by normalizing the number of paths with this article as a target that contained backtracking to the amount of times this article is a target in the path.
+
+Here are the top 5 articles that cause the most backtracking when they are the target of the path. The score NormalizedCount was calculated by normalizing the number of paths with this article as a target that contained backtracking to the amount of times this article is a target in the path.
 
 In the list, the articles appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science.
 

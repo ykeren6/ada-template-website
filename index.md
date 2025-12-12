@@ -1,5 +1,5 @@
 ---
-layout: full
+layout: test
 ---
 
 # Backtrack to the future
@@ -12,12 +12,15 @@ Now imagine you are given this map:
 
 <iframe src="network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 
-<iframe src="network_map_clustered_nodes.html" width="100%" height="600" style="border:none;"></iframe>
-
 This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article.
 
+Okay, okay, we're just kidding. Maybe in your brain you could see it more like this:
 
-Now that sounds pretty scary, we get it. 
+<iframe src="network_map_clustered_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+
+This is the map of articles sorted into their main category. For exemple, cities end up in the Geography category, atoms in science, etc...
+
+Now this task sounds pretty scary, we get it. 
 
 You could set out and get caught in dangerous traps. You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of explorers (or okay... just Wikiuspeedia nerds) do just that.
 
@@ -70,7 +73,7 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 
 In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. When you're not familiar with a destination, it's hard to find your way to it, right ? Players backtracked more when they were looking for these 5 articles in particular, perhaps because unfamiliarity with the subjects. 
 
-Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin)
+Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
 
 
 ## Chapter 4 : Will backtracking doom you to fail ?

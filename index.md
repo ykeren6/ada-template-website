@@ -10,13 +10,13 @@ Imagine this: you are an untrademarked, totally unspecified explorer and you are
 
 Now imagine you are given this map:
 
-<iframe src="network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 
 This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article.
 
 Okay, okay, we're just kidding. Maybe in your brain you could see it more like this:
 
-<iframe src="network_map_clustered_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="browsers/network_map_clustered_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 
 This is the map of articles sorted into their main category. For exemple, cities end up in the Geography category, atoms in science, etc...
 

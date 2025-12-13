@@ -30,7 +30,7 @@ You could set out and get caught in dangerous traps. You may want to go back, re
 20% of paths in our Wikispeedia dataset contain backtracking. 
 You can take a look at what paths past users have done here:
 
-// interactive map to highlight paths
+<iframe src="browsers/network_map_clustered_nodes_with_dropdown.html" width="100%" height="600" style="border:none;"></iframe>
 
 
 When we saw this, we immediately wondered where these people backtracked to, why they did it, what pushed them to go back and, obviously, whether it would make them more likely to lose the game. 

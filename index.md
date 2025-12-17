@@ -14,7 +14,6 @@ Now imagine you are given this map:
 
 This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 
 
-<iframe src="browsers/network_map_clustered_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 
 Now this task sounds pretty scary, we get it. 
 
@@ -79,7 +78,7 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 
 ### Hypothesis 2 : Subjects in the path
 
-Another reason we think users may want to go back is if they are not familiar with the subject of the final article or with the subject of the starting article. Lack of familiarity would prevent them from being to plan an efficient path and could therefore cause some backtracking.
+Another reason we think users may want to go back is if they are not familiar with the subject of the final article or with the subject of the starting article. Lack of familiarity would prevent them from being to plan an efficient path and could therefore cause some backtracking. 
 
 To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset.
 
@@ -88,10 +87,11 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
 ![Heatmap 2](figures/heatmap_2.png)
 
 
-Both finished and unfinished paths seemed to carry more backtracking in the same category combinations.
+Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
 
+As an explorer, if someone tells you to go to Lithuania and you don't know where Lithuania is, well, you could get lost somewhere between Estonia and Latvia and need a few attempts to find your way. 
 
-For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most.
+Another possibility is that maybe people are just interested in the subject. Maybe these explorers just wanted to spend more time reading up on the subject.
 
 Here are the top 5 articles that cause the most backtracking when they are the target of the path. 
 
@@ -106,6 +106,8 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. When you're not familiar with a destination, it's hard to find your way to it, right ? Players backtracked more when they were looking for these 5 articles in particular, perhaps because unfamiliarity with the subjects. 
 
 Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
+
+
 
 
 ## Chapter 4 : Will backtracking doom you to fail ?

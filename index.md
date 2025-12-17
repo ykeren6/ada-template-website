@@ -22,7 +22,7 @@ This is the map of articles sorted into their main category. For exemple, cities
 
 Now this task sounds pretty scary, we get it. 
 
-You could set out and get caught in dangerous traps. You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of explorers (or okay... just Wikiuspeedia nerds) do just that.
+You could set out and get caught in dangerous traps. You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of explorers (or okay... just Wikispeedia nerds) do just that.
 
 ![Pie chart](figures/pie_chart_chap_1.png)
 
@@ -40,6 +40,41 @@ Let's take a look!
 
 ## Chapter 2 : Where did you come from, where did you go?
 
+People use backtracking sometimes. However, before asking why, let's first look at how. How do people use backtracking, and more importantly, where do they go? Remember that the map is not visible, so it is virtually impossible for you to know whether you are on the right track or not.
+
+To begin with, we will determine which sites are network hubs and which are backtracking hubs. In this context, network hubs are sites that have a large number of hyperlinks, and therefore connections to other sites, while backtracking hubs are sites that have been found to be a return point when using backtrack.
+
+![Network hubs](figures/Network_hubs.png)
+
+![Backtracking hubs](figures/Backtracking_hubs.png)
+
+Interesting... We can already see that certain sites are quite high up in both distributions. But is this a happy coincidence, or could there actually be a hidden connection between the two ?
+
+In order to determine whether there is a direct correlation between the number of links and the backtrace count, we need to look at all the points. 
+
+![Comparaison ranking hubs](figures/Comparaison_ranking_hubs.png)
+
+The correlation between the number of links and the number of backtraces is quite low, suggesting that the hubs in the network are not necessarily the same as those frequently used for backtracking. However, there is a point of high density on the right side of the graph, indicating that there is a certain set of sites that follows the correlation. 
+
+Let's go a little further to better understand what is happening in the high-density zone. Let's do a Spearman Correlation and P-Value test for the data sets that are the first n elements of each dataFrame. The idea is to identify which sets produce the highest correlation. Why? We'll get to that very soon...
+
+![Slope similarity](figures/Slope_similarity.png)
+
+What can we see? Well, first of all, the score decreases as more data is taken into account, which is not very encouraging for the future. But we also notice that with few elements, the score is not so bad. We have a respectable correlation score with the first 250 elements or so, which was already indicated by the previous graph.
+
+You're probably thinking that this is simply the effect of the law of small numbers, which produces results that are not necessarily relevant. However, you would be wrong to think that this is all there is to say...
+
+There is something that has not yet been presented, namely, the distribution of hubs.
+
+![Hubs distribution](figure/Hubs_distributions.png)
+
+How does this distribution change the situation? First of all, the distributions do not follow the same trend, but that is not very important. The reason for the previous rather weak results is highlighted here.
+
+When testing the correlation, we relied on the location of an element in the dataframe. However, It should be noted that the lower a site's backtrack score, the more it shares the same score with other sites, unlike the number of hyperlinks. 
+
+Why would that be a problem, you ask ? 
+
+Well, since many sites share the same backtrack score, their ranking is no longer very meaningful if we focus on low scores. For example, take a site with a backtrack score of 1. Est-ce que vous pouriez dire précisement quel index il devrait occupé dans le dataframe ? Une personne normale ne peux pas le savoir. It could be element 1700 or 2400, depending of the ordrer that the code is processing the data. This will create a very significant variance and it's this aspect that greatly reduces correlation as values are added.
 
 ## Chapter 3 : Why are users backtracking?
 

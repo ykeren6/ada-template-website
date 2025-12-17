@@ -60,13 +60,13 @@ Let's go a little further to better understand what is happening in the high-den
 
 ![Slope similarity](figures/Slope_similarity.png)
 
-What can we see? Well, first of all, the score decreases as more data is taken into account, which is not very encouraging for the future. But we also notice that with few elements, the score is not so bad. We have a respectable correlation score with the first 250 elements or so, which was already indicated by the previous graph.
+What can we see? Well, first of all, the score decreases as more data is taken into account, which is not very encouraging for the next parts. But we also notice that with few elements, the score is not so bad. We have a respectable correlation score with the first 250 elements or so, which was already indicated by the previous graph.
 
 You're probably thinking that this is simply the effect of the law of small numbers, which produces results that are not necessarily relevant. However, you would be wrong to think that this is all there is to say...
 
 There is something that has not yet been presented, namely, the distribution of hubs.
 
-![Hubs distribution](figure/Hubs_distributions.png)
+![Hubs distribution](figure/Hubs_distribution.png)
 
 How does this distribution change the situation? First of all, the distributions do not follow the same trend, but that is not very important. The reason for the previous rather weak results is highlighted here.
 
@@ -74,7 +74,7 @@ When testing the correlation, we relied on the location of an element in the dat
 
 Why would that be a problem, you ask ? 
 
-Well, since many sites share the same backtrack score, their ranking is no longer very meaningful if we focus on low scores. For example, take a site with a backtrack score of 1. Est-ce que vous pouriez dire précisement quel index il devrait occupé dans le dataframe ? Une personne normale ne peux pas le savoir. It could be element 1700 or 2400, depending of the ordrer that the code is processing the data. This will create a very significant variance and it's this aspect that greatly reduces correlation as values are added.
+Well, since many sites share the same backtrack score, their ranking is no longer very meaningful if we focus on low scores. For example, take a site with a backtrack score of 1. Could you say precisely which index it should occupy in the dataframe? A normal person cannot know that. It could be element 1700 or 2400, depending of the ordrer that the code is processing the data. This will create a very significant variance and it's this aspect that greatly reduces correlation as values are added.
 
 ## Chapter 3 : Why are users backtracking?
 

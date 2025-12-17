@@ -2,23 +2,19 @@
 layout: test
 ---
 
-# Backtrack to the future
+# IndiADA Jones and the raiders of the human knowledge
 
 ## Chapter 1 : Finding your way in the big bad network
 
-Imagine this: you are an untrademarked, totally unspecified explorer and you are tasked with exploring an ancient ruin containing all the world's knowledge. You are given a map and you have to find your way from one point in the ruin to another. Pretty easy, right?
+Imagine this: you are an untrademarked, totally unspecified explorer and you are tasked with exploring an ancient ruin containing all of humanity's knowledge. You are given a map and you have to find your way from one point in the ruin to another. Pretty easy, right?
 
 Now imagine you are given this map:
 
 <iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 
-This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article.
-
-Okay, okay, we're just kidding. Maybe in your brain you could see it more like this:
+This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 
 
 <iframe src="browsers/network_map_clustered_nodes.html" width="100%" height="600" style="border:none;"></iframe>
-
-This is the map of articles sorted into their main category. For exemple, cities end up in the Geography category, atoms in science, etc...
 
 Now this task sounds pretty scary, we get it. 
 
@@ -32,8 +28,9 @@ You can take a look at what paths past users have done here:
 
 <iframe src="browsers/network_map_clustered_nodes_with_dropdown.html" width="100%" height="600" style="border:none;"></iframe>
 
+This map is maybe closer to how you would actually imagine it to be to orient yourself. The articles are sorted by proximity of vocabulary used in each one, so Paris is sorted close to France, anything to do with Poland forms a cluster... 
 
-When we saw this, we immediately wondered where these people backtracked to, why they did it, what pushed them to go back and, obviously, whether it would make them more likely to lose the game. 
+When we saw the amount of bcaktracking users did, we immediately wondered where these people backtracked to, what pushed them to go back and, obviously, whether it would make them more likely to lose the game. 
 
 Let's take a look!
 

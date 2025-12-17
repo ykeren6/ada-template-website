@@ -26,9 +26,6 @@ You could set out and get caught in dangerous traps. You may want to go back, re
   frameborder="0">
 </iframe>
 
-![Pie chart](figures/pie_chart_chap_1.png)
-
-
 20% of paths in our Wikispeedia dataset contain backtracking. 
 You can take a look at what paths past users have done here:
 
@@ -89,10 +86,12 @@ Another reason we think users may want to go back is if they are not familiar wi
 
 To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset.
 
-![Heatmap 1](figures/heatmap_1.png)
-
-![Heatmap 2](figures/heatmap_2.png)
-
+<iframe 
+  src="figures/category_heatmaps.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
 
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
 
@@ -123,8 +122,12 @@ Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/w
 
 ### Number of backtracks in finished and unfinished paths histogram
 
-![Distribution of finished vs unfinished paths](figures/distrib_fin_vs_unfin.png)
-
+<iframe 
+  src="figures/distrib_fin_vs_unfin.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
 
 This graph shows us the distribution of paths per certain amount of backtracking. It serves to highlight the wide range of amounts of backtracking in the database.
 

@@ -146,8 +146,8 @@ In order to determine whether there was any significant non linear correlation b
 
 Games where the user has backtracked have a slight tendency to be unsuccessful.
 
-<h2 onclick="expand('p1')">Honorable mentions</h2>
-<p id="p1">
+
+<details> Honorable mention
 Before we move on to the final leg of our ADAventure, we wanted to ask you a quick question.
 
 When you saw our first map, did you wonder what that big circle in the middle is ?
@@ -160,53 +160,50 @@ The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
 
-</p>
+</details>
 
 
 
 ## Chapter 5 : The effect of backtracking on user difficulty perception
 
-When we realized that our adventurers were not more likely to fail when they backtracked, we wondered if backtracking could impact their perception of the difficulty of the game.
+So, backtracking does not seem to be linked with not reaching your destination in the game (AKA failing the game).  But this realisation made us wonder whether it affected the difficulty perception our adventurers had of the game. We imagined that having to turn back again would make for a less enjoyable and more difficult path.
 
-Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). We wanted to describe how backtracking affect the ratings (i.e. the difficulty perception). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
+To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
 
 ![Rating_vs_Backtrack](figures/Rating_vs_Backtrack.png)
 
-Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles .
-
-
-#### Coefficients
-
-| Variable | coef | std err | t | P>\|t\| | [0.025 | 0.975] |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Intercept** | 1.0532 | 0.025 | 41.833 | 0.000 | 1.004 | 1.103 |
-| **Number of Backtrack** | -0.2313 | 0.007 | -33.478 | 0.000 | -0.245 | -0.218 |
-| **Duration [s]** | 0.0017 | 5.31e-05 | 32.605 | 0.000 | 0.002 | 0.002 |
-| **Path Length** | 0.1553 | 0.003 | 58.347 | 0.000 | 0.150 | 0.161 |
-| **Shortest Path Length** | 0.0074 | 0.008 | 0.951 | 0.341 | -0.008 | 0.023 |
+Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
 ![ols1](figures/ols1.png)
 
-Counterintuitively, backtracking has a clear and substantial impact on how players perceive the difficulty of the game. In the regression, the number of backtracks shows a strong negative coefficient (–0.23), meaning that each additional backtrack is associated with a lower difficulty rating once path length, duration, and shortest path length are controlled for. This indicates that players who backtrack frequently do not interpret these movements as signs of a demanding or punishing task. Instead, backtracking seems to reflect exploration that does not translate into a feeling of high difficulty. Overall, the number of backtracks is a robust predictor of lower perceived difficulty.
+| Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
+|:---|:---|:---|:---|:---|:---|:---|
+| Intercept | 1.0532 | 0.025 | 41.833 | 0.000 | 1.004 | 1.103 |
+| Nbr_Backtrack | -0.2313 | 0.007 | -33.478 | 0.000 | -0.245 | -0.218 |
+| DurationInSec | 0.0017 | 5.31e-05 | 32.605 | 0.000 | 0.002 | 0.002 |
+| Path_Length | 0.1553 | 0.003 | 58.347 | 0.000 | 0.150 | 0.161 |
+| Shortest_Path_Length | 0.0074 | 0.008 | 0.951 | 0.341 | -0.008 | 0.023 |
 
-
-#### Coefficients (standardized)
-
-| Variable | coef | std err | t | P>\|t\| | [0.025 | 0.975] |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Intercept** | 2.2618 | 0.006 | 410.609 | 0.000 | 2.251 | 2.273 |
-| **Number of Backtrack** | -0.2754 | 0.008 | -33.478 | 0.000 | -0.292 | -0.259 |
-| **Duration [s]** | 0.2412 | 0.007 | 32.605 | 0.000 | 0.227 | 0.256 |
-| **Path Length** | 0.5768 | 0.010 | 58.347 | 0.000 | 0.557 | 0.596 |
-| **Shortest Path Length** | 0.0053 | 0.006 | 0.951 | 0.341 | -0.006 | 0.016 |
+Backtracking has a clear and substantial impact on how players perceive the difficulty of the game, but not in the way we expected. In the regression, the number of backtracks shows a strong negative coefficient (–0.23), meaning that each additional backtrack is associated with a lower difficulty rating once path length, duration, and shortest path length are controlled for. Backtacking is therefore a strong predictor of a lower difficulty scores. It seems then that our adventurers do not see retracing their steps as hard or punishing. It seems that backtracking actually makes them perceive the journey as easier. Perhaps they get more time to explore and get a more rewarding feeling when they actually manage to reach their destination.
 
 ![ols2](figures/ols2.png)
 
-Using standardized coefficients makes it possible to compare the relative strength of each predictor on the same scale. For ratings, the standardized effect of backtracking is strongly negative (β = –0.28). This means that, when all variables are expressed in standard deviation units, an increase of one standard deviation in the number of backtracks leads to a decrease of about 0.28 standard deviations in the perceived difficulty rating. Among all predictors, backtracking is the only negative driver of difficulty perception and one of the strongest predictors overall, second only to path length.
+| Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
+|:---|:---|:---|:---|:---|:---|:---|
+| Intercept | 2.2618 | 0.006 | 410.609 | 0.000 | 2.251 | 2.273 |
+| Nbr_Backtrack | -0.2754 | 0.008 | -33.478 | 0.000 | -0.292 | -0.259 |
+| DurationInSec | 0.2412 | 0.007 | 32.605 | 0.000 | 0.227 | 0.256 |
+| Path_Length | 0.5768 | 0.010 | 58.347 | 0.000 | 0.557 | 0.596 |
+| Shortest_Path_Length | 0.0053 | 0.006 | 0.951 | 0.341 | -0.006 | 0.016 |
 
-Our naive analysis could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down. However, the negative effect of backtracking on rating is likely independent of path length and game duration, maybe due to exploration behavior or other cognitive factors.
+To check that we accurately caught this effect, we even ran a second OLS with standardized coefficients to make sure that we were isolating the impact of backtracking on the same scale as the other variables. For ratings, the standardized effect of backtracking is strongly negative (β = –0.28). This means that, when all variables are expressed in standard deviation units, an increase of one standard deviation in the number of backtracks leads to a decrease of about 0.28 standard deviations in the perceived difficulty rating. Among all predictors, backtracking is the only negative driver of difficulty perception and one of the strongest predictors overall, second only to path length.
+
+The first linear regression could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down. 
 
 ![Backtrack_Duration_Length](figures/Backtrack_Duration_Length.png)
+
+Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
+
 
 ## Chapter 6 : Conclusion
 
@@ -217,7 +214,7 @@ By exploring the Wikispeedia dataset, we were able to conclude that:
 - Users usually go back to well connected hubs when they backtrack
 - An experienced Wikispeedia user tends to backtrack more than inexperienced users 
 - Some combinations of categories of articles tend to cause more backtracking than others
-- Backatracking has little effect on overall success in the game 
+- Backatracking has little effect on overall success in the game and is equally present in the finished and unfinished paths
 - Counterintuitively, more backtracking is linked to lower difficulty ratings
 
 These all lead us to the conclusion that backtracking will not affect your game negatively. You may actually find your games easier if you allow yourself to backtrack and it will not make you more likely to fail.

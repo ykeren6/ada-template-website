@@ -93,12 +93,12 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
 
 <iframe 
   src="figures/category_heatmap1.html"
-  style="width:100%; height:70vh; border:0;">
+  style="width:100%; height:60vh; border:0;">
 </iframe>
 
 <iframe 
   src="figures/category_heatmap2.html"
-  style="width:100%; height:70vh; border:0;">
+  style="width:100%; height:60vh; border:0;">
 </iframe>
 
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
@@ -173,11 +173,12 @@ It turns out that, at the bottom of every single Wikispeedia page, there is a li
 So, backtracking does not seem to be linked with not reaching your destination in the game (AKA failing the game).  But this realisation made us wonder whether it affected the difficulty perception our adventurers had of the game. We imagined that having to turn back again would make for a less enjoyable and more difficult path.
 
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
-
-<iframe 
-  src="figures/plot_rating_by_backtrack.html"
-  style="width:100%; height:80vh; border:0;">
-</iframe>
+<div style="display: flex; justify-content: center;">
+  <iframe 
+    src="figures/plot_rating_by_backtrack.html"
+    style="width:100%; height:80vh; border:0;">
+  </iframe>
+</div>
 
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
@@ -185,14 +186,6 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
   src="figures/OLS1.html"
   style="width: 100%; height: 80vh; border: 0;"
 ></iframe>
-
-<iframe id="plot-frame" src="figures/OLS1.html" style="width:100%; border:0;"></iframe>
-<script>
-  const iframe = document.getElementById('plot-frame');
-  iframe.onload = () => {
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-  };
-</script>
 
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
@@ -210,14 +203,6 @@ Backtracking has a clear and substantial impact on how players perceive the diff
   style="width:100%; height:80vh; border:0;">
 </iframe>
 
-<iframe id="plot-frame" src="figures/OLS2.html" style="width:100%; border:0;"></iframe>
-<script>
-  const iframe = document.getElementById('plot-frame');
-  iframe.onload = () => {
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-  };
-</script>
-
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -233,16 +218,8 @@ The first linear regression could not show this effect since bactracking strongl
 
 <iframe 
   src="figures/backtrack_rating_relationships.html"
-  style="width: 100%; height: 60vh; border: 0;"
+  style="width: 100%; height: 40vh; border: 0;"
 ></iframe>
-
-<iframe id="plot-frame" src="figures/backtrack_rating_relationships.html" style="width:100%; border:0;"></iframe>
-<script>
-  const iframe = document.getElementById('plot-frame');
-  iframe.onload = () => {
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-  };
-</script>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
 

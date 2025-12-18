@@ -80,6 +80,13 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 
 ### Hypothesis 1 : Experience level
 
+<iframe 
+  src="figures/experience_level.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
+
 ### Hypothesis 2 : Subjects in the path
 
 Another potential source of backtracking we wanted to look into is the category of the articles in the path. The subject of the start point and end point could have a large impact on the amount of backtracking.
@@ -127,6 +134,13 @@ And you, do you think you can do it without getting lost ? Would you have found 
 
 ### Paths with and without backtracking in successful and unsuccessful paths
 
+<iframe 
+  src="figures/stacked_columns.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
+
 ### Number of backtracks in finished and unfinished paths histogram
 
 <iframe 
@@ -170,11 +184,21 @@ So, backtracking does not seem to be linked with not reaching your destination i
 
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
 
-![Rating_vs_Backtrack](figures/Rating_vs_Backtrack.png)
+<iframe 
+  src="figures/plot_rating_by_backtrack.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
 
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
-![ols1](figures/ols1.png)
+<iframe 
+  src="figures/OLS1.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -186,7 +210,12 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
 
 Backtracking has a clear and substantial impact on how players perceive the difficulty of the game, but not in the way we expected. In the regression, the number of backtracks shows a strong negative coefficient (–0.23), meaning that each additional backtrack is associated with a lower difficulty rating once path length, duration, and shortest path length are controlled for. Backtacking is therefore a strong predictor of a lower difficulty scores. It seems then that our adventurers do not see retracing their steps as hard or punishing. It seems that backtracking actually makes them perceive the journey as easier. Perhaps they get more time to explore and get a more rewarding feeling when they actually manage to reach their destination.
 
-![ols2](figures/ols2.png)
+<iframe 
+  src="figures/OLS2.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -200,7 +229,12 @@ To check that we accurately caught this effect, we even ran a second OLS with st
 
 The first linear regression could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down. 
 
-![Backtrack_Duration_Length](figures/Backtrack_Duration_Length.png)
+<iframe 
+  src="figures/backtrack_rating_relationships.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
 

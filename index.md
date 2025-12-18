@@ -186,7 +186,7 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
 
 <iframe 
   src="figures/plot_rating_by_backtrack.html"
-  width="100%"
+  width="90%"
   height="500"
   frameborder="0">
 </iframe>
@@ -195,7 +195,7 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
 
 <iframe 
   src="figures/OLS1.html"
-  width="100%"
+  width="90%"
   height="500"
   frameborder="0">
 </iframe>

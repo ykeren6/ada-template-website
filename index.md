@@ -99,7 +99,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   <iframe 
     src="figures/category_heatmap1.html"
     width="100%"
-    height="550"
+    height="700"
     frameborder="0">
   </iframe>
 </div>
@@ -108,7 +108,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   <iframe 
     src="figures/category_heatmap2.html"
     width="100%"
-    height="550"
+    height="700"
     frameborder="0">
   </iframe>
 </div>
@@ -144,7 +144,7 @@ And you, do you think you can do it without getting lost ? Would you have found 
   <iframe 
     src="figures/stacked_columns.html"
     width="100%"
-    height="550"
+    height="400"
     frameborder="0">
   </iframe>
 </div>

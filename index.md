@@ -12,7 +12,6 @@ Imagine this: you are an untrademarked, totally unspecific explorer and you are 
 Now imagine you are given this map:
 
 
-
 <iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 
 
@@ -101,14 +100,14 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 
 ### Hypothesis 1 : Experience level
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/experience_level.html"
-    width="100%"
-    height="550"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/experience_level.html"
+  width="100%"
+  height="550"
+  frameborder="0">
+</iframe>
+
 
 ### Hypothesis 2 : Subjects in the path
 
@@ -118,23 +117,23 @@ Another potential source of backtracking we wanted to look into is the category 
 To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset to see if any combination of two categories would lead to more backtracking.
 
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/category_heatmap1.html"
-    width="100%"
-    height="650"
-    frameborder="0">
-  </iframe>
-</div>
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/category_heatmap2.html"
-    width="100%"
-    height="650"
-    frameborder="0">
-  </iframe>
-</div>
+<iframe 
+  src="figures/category_heatmap1.html"
+  width="100%"
+  height="650"
+  frameborder="0">
+</iframe>
+
+
+
+<iframe 
+  src="figures/category_heatmap2.html"
+  width="100%"
+  height="650"
+  frameborder="0">
+</iframe>
+
 
 
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
@@ -164,26 +163,26 @@ And you, do you think you can do it without getting lost ? Would you have found 
 
 ### Paths with and without backtracking in successful and unsuccessful paths
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/stacked_columns.html"
-    width="100%"
-    height="450"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/stacked_columns.html"
+  width="100%"
+  height="450"
+  frameborder="0">
+</iframe>
+
 
 
 ### Number of backtracks in finished and unfinished paths histogram
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/distrib_fin_vs_unfin.html"
-    width="100%"
-    height="550"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/distrib_fin_vs_unfin.html"
+  width="100%"
+  height="550"
+  frameborder="0">
+</iframe>
+
 
 
 This graph shows us the distribution of paths per certain amount of backtracking. It serves to highlight the wide range of amounts of backtracking in the database.
@@ -200,9 +199,7 @@ Games where the user has backtracked have a slight tendency to be unsuccessful.
 
 
 
-<details> 
-
-Honorable mention
+<details> Honorable mention
 Before we move on to the final leg of our ADAventure, we wanted to ask you a quick question.
 
 When you saw our first map, did you wonder what that big circle in the middle is ?
@@ -214,7 +211,6 @@ What subject is so invaluable, so **universal** that it is the most connected ar
 The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
-
 </details>
 
 
@@ -226,27 +222,27 @@ So, backtracking does not seem to be linked with not reaching your destination i
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
 
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/plot_rating_by_backtrack.html"
-    width="100%"
-    height="550"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/plot_rating_by_backtrack.html"
+  width="100%"
+  height="550"
+  frameborder="0">
+</iframe>
+
 
 
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/OLS1.html"
-    width="100%"
-    height="550"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/OLS1.html"
+  width="100%"
+  height="550"
+  frameborder="0">
+</iframe>
+
 
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
@@ -261,14 +257,14 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
 Backtracking has a clear and substantial impact on how players perceive the difficulty of the game, but not in the way we expected. In the regression, the number of backtracks shows a strong negative coefficient (–0.23), meaning that each additional backtrack is associated with a lower difficulty rating once path length, duration, and shortest path length are controlled for. Backtacking is therefore a strong predictor of a lower difficulty scores. It seems then that our adventurers do not see retracing their steps as hard or punishing. It seems that backtracking actually makes them perceive the journey as easier. Perhaps they get more time to explore and get a more rewarding feeling when they actually manage to reach their destination.
 
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/OLS2.html"
-    width="100%"
-    height="550"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/OLS2.html"
+  width="100%"
+  height="550"
+  frameborder="0">
+</iframe>
+
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -284,14 +280,14 @@ To check that we accurately caught this effect, we even ran a second OLS with st
 The first linear regression could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down.
 
 
-<div style="display: flex; justify-content: center;">
-  <iframe 
-    src="figures/backtrack_rating_relationships.html"
-    width="100%"
-    height="350"
-    frameborder="0">
-  </iframe>
-</div>
+
+<iframe 
+  src="figures/backtrack_rating_relationships.html"
+  width="100%"
+  height="350"
+  frameborder="0">
+</iframe>
+
 
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !

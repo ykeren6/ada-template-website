@@ -29,12 +29,14 @@ Now this task sounds pretty scary, we get it.
 
 You could set out and get caught in dangerous traps. You may want to go back, retrace your steps to try and find your way in this maze. And actually it turns out a lot of explorers (or okay... just Wikispeedia nerds) do just that.
 
-<iframe 
-  src="figures/backtracking_pie.html"
-  width="100%"
-  height="450"
-  frameborder="0">
-</iframe>
+<div style="text-align: center;">
+    <iframe 
+      src="figures/backtracking_pie.html"
+      width="100%"
+      height="450"
+      frameborder="0">
+    </iframe>
+</div>
 
 About 20% of paths in our Wikispeedia dataset contain backtracking. 
 

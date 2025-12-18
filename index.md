@@ -168,7 +168,7 @@ And you, do you think you can do it without getting lost ? Would you have found 
     <iframe 
       src="figures/stacked_columns.html"
       style="display: inline-block;"
-      width="60%"
+      width="63%"
       height="450"
       frameborder="0">
     </iframe>

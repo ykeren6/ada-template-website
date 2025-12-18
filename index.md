@@ -200,8 +200,8 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
 
 <iframe 
   src="figures/OLS1.html"
-  style="width:100%; height:80vh; border:0;">
-</iframe>
+  style="width: 100%; height: 80vh; border: 0;"
+></iframe>
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -234,6 +234,11 @@ The first linear regression could not show this effect since bactracking strongl
   src="figures/backtrack_rating_relationships.html"
   style="width:50%; height:80vh; border:0;">
 </iframe>
+
+<iframe 
+  src="figures/backtrack_rating_relationships.html"
+  style="width: 100%; height: 80vh; border: 0;"
+></iframe>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
 

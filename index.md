@@ -93,12 +93,12 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
 
 <iframe 
   src="figures/category_heatmap1.html"
-  style="width:100%; height:80vh; border:0;">
+  style="width:100%; height:70vh; border:0;">
 </iframe>
 
 <iframe 
   src="figures/category_heatmap2.html"
-  style="width:100%; height:80vh; border:0;">
+  style="width:100%; height:70vh; border:0;">
 </iframe>
 
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
@@ -215,7 +215,7 @@ The first linear regression could not show this effect since bactracking strongl
 
 <iframe 
   src="figures/backtrack_rating_relationships.html"
-  style="width: 100%; height: 80vh; border: 0;"
+  style="width: 100%; height: 60vh; border: 0;"
 ></iframe>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !

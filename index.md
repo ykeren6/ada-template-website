@@ -185,12 +185,30 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
   style="width:100%; margin: 0 auto; height:80vh; border:0;">
 </iframe>
 
+<div style="display: flex; justify-content: center;">
+  <iframe 
+    src="figures/plot_rating_by_backtrack.html"
+    width="100%"
+    height="500"
+    frameborder="0">
+  </iframe>
+</div>
+
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
 <iframe 
   src="figures/OLS1.html"
   style="width: 100%; height: 100vh; border: 0;"
 ></iframe>
+
+<div style="display: flex; justify-content: center;">
+  <iframe 
+    src="figures/OLS1.html"
+    width="100%"
+    height="500"
+    frameborder="0">
+  </iframe>
+</div>
 
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
@@ -208,6 +226,14 @@ Backtracking has a clear and substantial impact on how players perceive the diff
   style="width:100%; height:100vh; border:0;">
 </iframe>
 
+<div style="display: flex; justify-content: center;">
+  <iframe 
+    src="figures/OLS2.html"
+    width="100%"
+    height="500"
+    frameborder="0">
+  </iframe>
+</div>
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -225,6 +251,15 @@ The first linear regression could not show this effect since bactracking strongl
   src="figures/backtrack_rating_relationships.html"
   style="width: 100%; height: 90vh; border: 0;"
 ></iframe>
+
+<div style="display: flex; justify-content: center;">
+  <iframe 
+    src="figures/backtrack_rating_relationships.html"
+    width="100%"
+    height="300"
+    frameborder="0">
+  </iframe>
+</div>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
 

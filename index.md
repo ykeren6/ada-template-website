@@ -2,7 +2,7 @@
 layout: test
 ---
 
-# IndiADA Jones and the raiders of the human knowledge
+# IndiADA Jones and the raiders of human knowledge
 
 ## Chapter 1 : Finding your way in the big bad network
 

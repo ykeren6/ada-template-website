@@ -189,7 +189,7 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
   <iframe 
     src="figures/plot_rating_by_backtrack.html"
     width="100%"
-    height="450"
+    height="550"
     frameborder="0">
   </iframe>
 </div>
@@ -205,7 +205,7 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
   <iframe 
     src="figures/OLS1.html"
     width="100%"
-    height="450"
+    height="550"
     frameborder="0">
   </iframe>
 </div>
@@ -230,7 +230,7 @@ Backtracking has a clear and substantial impact on how players perceive the diff
   <iframe 
     src="figures/OLS2.html"
     width="100%"
-    height="450"
+    height="550"
     frameborder="0">
   </iframe>
 </div>
@@ -256,7 +256,7 @@ The first linear regression could not show this effect since bactracking strongl
   <iframe 
     src="figures/backtrack_rating_relationships.html"
     width="100%"
-    height="100"
+    height="900"
     frameborder="0">
   </iframe>
 </div>

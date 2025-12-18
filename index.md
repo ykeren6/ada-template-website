@@ -199,9 +199,12 @@ In order to determine whether there was any significant non linear correlation b
 
 <p style="text-align: justify;">
 Games where the user has backtracked have a slight tendency to be unsuccessful.
+</p>
 
 
-<details> Honorable mention
+<details> 
+<p style="text-align: justify;">
+Honorable mention
 Before we move on to the final leg of our ADAventure, we wanted to ask you a quick question.
 
 When you saw our first map, did you wonder what that big circle in the middle is ?
@@ -213,13 +216,13 @@ What subject is so invaluable, so **universal** that it is the most connected ar
 The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
-
+</p>
 </details>
-
 
 
 ## Chapter 5 : The effect of backtracking on user difficulty perception
 
+<p style="text-align: justify;">
 So, backtracking does not seem to be linked with not reaching your destination in the game (AKA failing the game).  But this realisation made us wonder whether it affected the difficulty perception our adventurers had of the game. We imagined that having to turn back again would make for a less enjoyable and more difficult path.
 
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.

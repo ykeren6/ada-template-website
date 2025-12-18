@@ -27,7 +27,7 @@ You could set out and get caught in dangerous traps. You may want to go back, re
 <iframe 
   src="figures/backtracking_pie.html"
   width="100%"
-  height="500"
+  height="450"
   frameborder="0">
 </iframe>
 
@@ -99,7 +99,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   <iframe 
     src="figures/category_heatmap1.html"
     width="100%"
-    height="600"
+    height="650"
     frameborder="0">
   </iframe>
 </div>
@@ -108,7 +108,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   <iframe 
     src="figures/category_heatmap2.html"
     width="100%"
-    height="600"
+    height="650"
     frameborder="0">
   </iframe>
 </div>
@@ -144,7 +144,7 @@ And you, do you think you can do it without getting lost ? Would you have found 
   <iframe 
     src="figures/stacked_columns.html"
     width="100%"
-    height="400"
+    height="450"
     frameborder="0">
   </iframe>
 </div>
@@ -252,7 +252,7 @@ The first linear regression could not show this effect since bactracking strongl
   <iframe 
     src="figures/backtrack_rating_relationships.html"
     width="100%"
-    height="500"
+    height="350"
     frameborder="0">
   </iframe>
 </div>

@@ -42,7 +42,7 @@ You could set out and get caught in dangerous traps. You may want to go back, re
     <iframe 
       src="figures/backtracking_pie.html"
       style="display: inline-block;"
-      width="90%"
+      width="80%"
       height="450"
       frameborder="0">
     </iframe>
@@ -133,6 +133,16 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   frameborder="0">
 </iframe>
 
+<div style="text-align: center;">
+    <iframe 
+      src="figures/category_heatmap1.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
+
 
 
 <iframe 
@@ -141,6 +151,16 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   height="650"
   frameborder="0">
 </iframe>
+
+<div style="text-align: center;">
+    <iframe 
+      src="figures/category_heatmap2.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 
@@ -178,6 +198,16 @@ And you, do you think you can do it without getting lost ? Would you have found 
   height="450"
   frameborder="0">
 </iframe>
+
+<div style="text-align: center;">
+    <iframe 
+      src="figures/stacked_columns.html"
+      style="display: inline-block;"
+      width="80%"
+      height="450"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 
@@ -238,6 +268,15 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
   frameborder="0">
 </iframe>
 
+<div style="text-align: center;">
+    <iframe 
+      src="figures/plot_rating_by_backtrack.html"
+      style="display: inline-block;"
+      width="80%"
+      height="550"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
@@ -251,6 +290,15 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
   frameborder="0">
 </iframe>
 
+<div style="text-align: center;">
+    <iframe 
+      src="figures/OLS1.html"
+      style="display: inline-block;"
+      width="80%"
+      height="550"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
@@ -272,6 +320,16 @@ Backtracking has a clear and substantial impact on how players perceive the diff
   height="550"
   frameborder="0">
 </iframe>
+
+<div style="text-align: center;">
+    <iframe 
+      src="figures/OLS2.html"
+      style="display: inline-block;"
+      width="80%"
+      height="550"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
@@ -295,6 +353,16 @@ The first linear regression could not show this effect since bactracking strongl
   height="350"
   frameborder="0">
 </iframe>
+
+<div style="text-align: center;">
+    <iframe 
+      src="figures/backtrack_rating_relationships.html"
+      style="display: inline-block;"
+      width="80%"
+      height="350"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 

@@ -159,7 +159,7 @@ It turns out that, at the bottom of every single Wikispeedia page, there is a li
 
 ## Chapter 5 : The effect of backtracking on user difficulty perception
 
-So, backtracking has no impact on success in the game. But this realisation made us wonder whether it affected the difficulty perception our adventurers had of the game. We imagined that having to turn back again would make for a less enjoyable and more difficult path.
+So, backtracking does not seem to be linked with not reaching your destination in the game (AKA failing the game).  But this realisation made us wonder whether it affected the difficulty perception our adventurers had of the game. We imagined that having to turn back again would make for a less enjoyable and more difficult path.
 
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
 

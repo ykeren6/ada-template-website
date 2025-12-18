@@ -186,6 +186,15 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
   style="width: 100%; height: 80vh; border: 0;"
 ></iframe>
 
+<iframe id="plot-frame" src="figures/OLS1.html" style="width:100%; border:0;"></iframe>
+<script>
+  const iframe = document.getElementById('plot-frame');
+  iframe.onload = () => {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  };
+</script>
+
+
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
 | Intercept | 1.0532 | 0.025 | 41.833 | 0.000 | 1.004 | 1.103 |
@@ -200,6 +209,15 @@ Backtracking has a clear and substantial impact on how players perceive the diff
   src="figures/OLS2.html"
   style="width:100%; height:80vh; border:0;">
 </iframe>
+
+<iframe id="plot-frame" src="figures/OLS2.html" style="width:100%; border:0;"></iframe>
+<script>
+  const iframe = document.getElementById('plot-frame');
+  iframe.onload = () => {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  };
+</script>
+
 
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
@@ -217,6 +235,14 @@ The first linear regression could not show this effect since bactracking strongl
   src="figures/backtrack_rating_relationships.html"
   style="width: 100%; height: 60vh; border: 0;"
 ></iframe>
+
+<iframe id="plot-frame" src="figures/backtrack_rating_relationships.html" style="width:100%; border:0;"></iframe>
+<script>
+  const iframe = document.getElementById('plot-frame');
+  iframe.onload = () => {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+  };
+</script>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
 

@@ -32,17 +32,8 @@ You could set out and get caught in dangerous traps. You may want to go back, re
 <div style="text-align: center;">
     <iframe 
       src="figures/backtracking_pie.html"
-      width="100%"
-      height="450"
-      frameborder="0">
-    </iframe>
-</div>
-
-<div style="text-align: center;">
-    <iframe 
-      src="figures/backtracking_pie.html"
       style="display: inline-block;"
-      width="70%"
+      width="65%"
       height="450"
       frameborder="0">
     </iframe>
@@ -173,24 +164,15 @@ And you, do you think you can do it without getting lost ? Would you have found 
 
 ### Paths with and without backtracking in successful and unsuccessful paths
 
-
-<iframe 
-  src="figures/stacked_columns.html"
-  width="100%"
-  height="450"
-  frameborder="0">
-</iframe>
-
 <div style="text-align: center;">
     <iframe 
       src="figures/stacked_columns.html"
       style="display: inline-block;"
-      width="70%"
+      width="65%"
       height="450"
       frameborder="0">
     </iframe>
 </div>
-
 
 
 ### Number of backtracks in finished and unfinished paths histogram
@@ -242,14 +224,6 @@ So, backtracking does not seem to be linked with not reaching your destination i
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
 
 
-
-<iframe 
-  src="figures/plot_rating_by_backtrack.html"
-  width="100%"
-  height="550"
-  frameborder="0">
-</iframe>
-
 <div style="text-align: center;">
     <iframe 
       src="figures/plot_rating_by_backtrack.html"
@@ -263,14 +237,6 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
 
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
-
-
-<iframe 
-  src="figures/OLS1.html"
-  width="100%"
-  height="550"
-  frameborder="0">
-</iframe>
 
 <div style="text-align: center;">
     <iframe 
@@ -296,13 +262,6 @@ Backtracking has a clear and substantial impact on how players perceive the diff
 
 
 
-<iframe 
-  src="figures/OLS2.html"
-  width="100%"
-  height="550"
-  frameborder="0">
-</iframe>
-
 <div style="text-align: center;">
     <iframe 
       src="figures/OLS2.html"
@@ -327,14 +286,6 @@ To check that we accurately caught this effect, we even ran a second OLS with st
 
 The first linear regression could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down.
 
-
-
-<iframe 
-  src="figures/backtrack_rating_relationships.html"
-  width="100%"
-  height="350"
-  frameborder="0">
-</iframe>
 
 <div style="text-align: center;">
     <iframe 

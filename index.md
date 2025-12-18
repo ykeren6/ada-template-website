@@ -168,8 +168,9 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
 ![ols1](figures/ols1.png)
+
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
-|---|---|---|---|---|---|---|
+|:---|:---|:---|:---|:---|:---|:---|
 | Intercept | 1.0532 | 0.025 | 41.833 | 0.000 | 1.004 | 1.103 |
 | Nbr_Backtrack | -0.2313 | 0.007 | -33.478 | 0.000 | -0.245 | -0.218 |
 | DurationInSec | 0.0017 | 5.31e-05 | 32.605 | 0.000 | 0.002 | 0.002 |
@@ -179,8 +180,9 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
 Backtracking has a clear and substantial impact on how players perceive the difficulty of the game, but not in the way we expected. In the regression, the number of backtracks shows a strong negative coefficient (–0.23), meaning that each additional backtrack is associated with a lower difficulty rating once path length, duration, and shortest path length are controlled for. Backtacking is therefore a strong predictor of a lower difficulty scores. It seems then that our adventurers do not see retracing their steps as hard or punishing. It seems that backtracking actually makes them perceive the journey as easier. Perhaps they get more time to explore and get a more rewarding feeling when they actually manage to reach their destination.
 
 ![ols2](figures/ols2.png)
+
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
-|---|---|---|---|---|---|---|
+|:---|:---|:---|:---|:---|:---|:---|
 | Intercept | 2.2618 | 0.006 | 410.609 | 0.000 | 2.251 | 2.273 |
 | Nbr_Backtrack | -0.2754 | 0.008 | -33.478 | 0.000 | -0.292 | -0.259 |
 | DurationInSec | 0.2412 | 0.007 | 32.605 | 0.000 | 0.227 | 0.256 |

@@ -82,9 +82,7 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 
 <iframe 
   src="figures/experience_level.html"
-  width="100%"
-  height="500"
-  frameborder="0">
+  style="width:100%; height:80vh; border:0;">
 </iframe>
 
 ### Hypothesis 2 : Subjects in the path
@@ -95,16 +93,12 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
 
 <iframe 
   src="figures/category_heatmap1.html"
-  width="100%"
-  height="500"
-  frameborder="0">
+  style="width:100%; height:80vh; border:0;">
 </iframe>
 
 <iframe 
   src="figures/category_heatmap2.html"
-  width="100%"
-  height="500"
-  frameborder="0">
+  style="width:100%; height:80vh; border:0;">
 </iframe>
 
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
@@ -136,18 +130,14 @@ And you, do you think you can do it without getting lost ? Would you have found 
 
 <iframe 
   src="figures/stacked_columns.html"
-  width="100%"
-  height="500"
-  frameborder="0">
+  style="width:100%; height:80vh; border:0;">
 </iframe>
 
 ### Number of backtracks in finished and unfinished paths histogram
 
 <iframe 
   src="figures/distrib_fin_vs_unfin.html"
-  width="100%"
-  height="500"
-  frameborder="0">
+  style="width:100%; height:80vh; border:0;">
 </iframe>
 
 This graph shows us the distribution of paths per certain amount of backtracking. It serves to highlight the wide range of amounts of backtracking in the database.
@@ -183,13 +173,6 @@ It turns out that, at the bottom of every single Wikispeedia page, there is a li
 So, backtracking does not seem to be linked with not reaching your destination in the game (AKA failing the game).  But this realisation made us wonder whether it affected the difficulty perception our adventurers had of the game. We imagined that having to turn back again would make for a less enjoyable and more difficult path.
 
 To analyse this, we used the rating metrics of the game. Ratings are optionally given by the user after finishing the game and range from 1 ("easy") to 5 ("brutal"). After some proper data processing, we first performed a naive analysis of univariable relationship between the number of backtracking and the average rating of each game. The first conclusion is that average rating increases as the number of backtracks increases and it was exactly what we hypothetized before doing this analysis.
-
-<iframe 
-  src="figures/plot_rating_by_backtrack.html"
-  width="90%"
-  height="500"
-  frameborder="0">
-</iframe>
 
 <iframe 
   src="figures/plot_rating_by_backtrack.html"
@@ -229,11 +212,6 @@ Backtracking has a clear and substantial impact on how players perceive the diff
 To check that we accurately caught this effect, we even ran a second OLS with standardized coefficients to make sure that we were isolating the impact of backtracking on the same scale as the other variables. For ratings, the standardized effect of backtracking is strongly negative (β = –0.28). This means that, when all variables are expressed in standard deviation units, an increase of one standard deviation in the number of backtracks leads to a decrease of about 0.28 standard deviations in the perceived difficulty rating. Among all predictors, backtracking is the only negative driver of difficulty perception and one of the strongest predictors overall, second only to path length.
 
 The first linear regression could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down. 
-
-<iframe 
-  src="figures/backtrack_rating_relationships.html"
-  style="width:50%; height:80vh; border:0;">
-</iframe>
 
 <iframe 
   src="figures/backtrack_rating_relationships.html"

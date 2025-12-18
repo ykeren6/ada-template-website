@@ -285,7 +285,7 @@ The first linear regression could not show this effect since bactracking strongl
 
 
 
-Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
+Nonetheless, the effect of backtracking is independent of path length and duration, and it strongly reduces the difficulty ratings given by adventurers to their games!
 
 
 ## Chapter 6 : Conclusion

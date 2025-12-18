@@ -186,15 +186,17 @@ Our naive analysis could not show this effect since bactracking strongly affect 
 
 ## Chapter 6 : Conclusion
 
-With this analysis of the Wikispeedia dataset, we were able to conclude that:
+And now, you've reached the end of the adventure. 
+
+By exploring the Wikispeedia dataset, we were able to conclude that:
 
 - Users usually go back to well connected hubs when they backtrack
 - An experienced Wikispeedia user tends to backtrack more than inexperienced users 
 - Some combinations of categories of articles tend to cause more backtracking than others
 - Backatracking has little effect on overall success in the game 
-- Counterintuitively, more backtracking is linked to lower difficulty ratings.
+- Counterintuitively, more backtracking is linked to lower difficulty ratings
 
-These all lead us to conclude that backtracking will not affect your game negatively. You may actually find your games easier if you allow yourself to backtrack and it will not make you more likely to fail.
+These all lead us to the conclusion that backtracking will not affect your game negatively. You may actually find your games easier if you allow yourself to backtrack and it will not make you more likely to fail.
 
-
+So, make mistakes, explore, go back and you may find that your time adventuring will feel even more rewarding.
 All this to say, it's not about the destination, it's about the journey.

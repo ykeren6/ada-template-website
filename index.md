@@ -87,7 +87,14 @@ Another potential source of backtracking we wanted to look into is the category 
 To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset to see if any combination of two categories would lead to more backtracking.
 
 <iframe 
-  src="figures/category_heatmaps.html"
+  src="figures/category_heatmap1.html"
+  width="100%"
+  height="500"
+  frameborder="0">
+</iframe>
+
+<iframe 
+  src="figures/category_heatmap2.html"
   width="100%"
   height="500"
   frameborder="0">

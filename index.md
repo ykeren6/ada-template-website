@@ -165,6 +165,7 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
 
 ![Rating_vs_Backtrack](figures/Rating_vs_Backtrack.png)
 
+Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
 ![ols1](figures/ols1.png)
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |

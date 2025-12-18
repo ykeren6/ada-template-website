@@ -139,8 +139,8 @@ In order to determine whether there was any significant non linear correlation b
 
 Games where the user has backtracked have a slight tendency to be unsuccessful.
 
-<h2 onclick="expand('p1')">Honorable mentions</h2>
-<p id="p1">
+
+<details> Honorable mention
 Before we move on to the final leg of our ADAventure, we wanted to ask you a quick question.
 
 When you saw our first map, did you wonder what that big circle in the middle is ?
@@ -153,7 +153,7 @@ The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
 
-</p>
+</details>
 
 
 

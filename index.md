@@ -42,7 +42,7 @@ You could set out and get caught in dangerous traps. You may want to go back, re
     <iframe 
       src="figures/backtracking_pie.html"
       style="display: inline-block;"
-      width="80%"
+      width="70%"
       height="450"
       frameborder="0">
     </iframe>
@@ -124,15 +124,6 @@ Another potential source of backtracking we wanted to look into is the category 
 
 To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset to see if any combination of two categories would lead to more backtracking.
 
-
-
-<iframe 
-  src="figures/category_heatmap1.html"
-  width="100%"
-  height="650"
-  frameborder="0">
-</iframe>
-
 <div style="text-align: center;">
     <iframe 
       src="figures/category_heatmap1.html"
@@ -142,15 +133,6 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
       frameborder="0">
     </iframe>
 </div>
-
-
-
-<iframe 
-  src="figures/category_heatmap2.html"
-  width="100%"
-  height="650"
-  frameborder="0">
-</iframe>
 
 <div style="text-align: center;">
     <iframe 
@@ -203,7 +185,7 @@ And you, do you think you can do it without getting lost ? Would you have found 
     <iframe 
       src="figures/stacked_columns.html"
       style="display: inline-block;"
-      width="80%"
+      width="70%"
       height="450"
       frameborder="0">
     </iframe>
@@ -272,7 +254,7 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
     <iframe 
       src="figures/plot_rating_by_backtrack.html"
       style="display: inline-block;"
-      width="80%"
+      width="95%"
       height="550"
       frameborder="0">
     </iframe>
@@ -294,7 +276,7 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
     <iframe 
       src="figures/OLS1.html"
       style="display: inline-block;"
-      width="80%"
+      width="95%"
       height="550"
       frameborder="0">
     </iframe>
@@ -325,7 +307,7 @@ Backtracking has a clear and substantial impact on how players perceive the diff
     <iframe 
       src="figures/OLS2.html"
       style="display: inline-block;"
-      width="80%"
+      width="95%"
       height="550"
       frameborder="0">
     </iframe>
@@ -358,7 +340,7 @@ The first linear regression could not show this effect since bactracking strongl
     <iframe 
       src="figures/backtrack_rating_relationships.html"
       style="display: inline-block;"
-      width="80%"
+      width="95%"
       height="350"
       frameborder="0">
     </iframe>

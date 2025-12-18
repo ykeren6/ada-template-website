@@ -47,10 +47,11 @@ About 20% of paths in our Wikispeedia dataset contain backtracking.
 When we saw this, we immediately wondered where these people backtracked to, what pushed them to go back and, obviously, whether it would make them more likely to lose the game. 
 
 Let's take a look!
-
+</p>
 
 ## Chapter 2 : Where did you come from, where did you go?
 
+<p style="text-align: justify;">
 People use backtracking sometimes. However, before asking why, let's first look at how. How do people use backtracking, and more importantly, where do they go? Remember that the map is not visible, so it is virtually impossible for you to know whether you are on the right track or not.
 
 To begin with, we will determine which sites are network hubs and which are backtracking hubs. In this context, network hubs are sites that have a large number of hyperlinks, and therefore connections to other sites, while backtracking hubs are sites that have been found to be a return point when using backtrack.
@@ -94,11 +95,11 @@ When testing the correlation, we relied on the location of an element in the dat
 Why would that be a problem, you ask ? 
 
 Well, since many sites share the same backtrack score, their ranking is no longer very meaningful if we focus on low scores. For example, take a site with a backtrack score of 1. Could you say precisely which index it should occupy in the dataframe? A normal person cannot know that. It could be element 1700 or 2400, depending of the ordrer that the code is processing the data. This will create a very significant variance and it's this aspect that greatly reduces correlation as values are added.
+</p>
 
 ## Chapter 3 : Why are users backtracking?
 
 ### Hypothesis 1 : Experience level
-</p>
 
 <div style="display: flex; justify-content: center;">
   <iframe 
@@ -109,9 +110,9 @@ Well, since many sites share the same backtrack score, their ranking is no longe
   </iframe>
 </div>
 
-<p style="text-align: justify;">
 ### Hypothesis 2 : Subjects in the path
 
+<p style="text-align: justify;">
 Another potential source of backtracking we wanted to look into is the category of the articles in the path. The subject of the start point and end point could have a large impact on the amount of backtracking.
 
 To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset to see if any combination of two categories would lead to more backtracking.
@@ -157,14 +158,11 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. 
 
 And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
-
-
-
+</p>
 
 ## Chapter 4 : Will backtracking doom you to fail ?
 
 ### Paths with and without backtracking in successful and unsuccessful paths
-</p>
 
 <div style="display: flex; justify-content: center;">
   <iframe 
@@ -297,10 +295,11 @@ The first linear regression could not show this effect since bactracking strongl
 
 <p style="text-align: justify;">
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !
-
+</p>
 
 ## Chapter 6 : Conclusion
 
+<p style="text-align: justify;">
 And now, you've reached the end of the adventure. 
 
 By exploring the Wikispeedia dataset, we were able to conclude that:

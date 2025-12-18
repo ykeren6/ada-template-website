@@ -180,11 +180,16 @@ To analyse this, we used the rating metrics of the game. Ratings are optionally 
   </iframe>
 </div>
 
+<iframe 
+  src="figures/plot_rating_by_backtrack.html"
+  style="width:100%; margin: 0 auto; height:80vh; border:0;">
+</iframe>
+
 Nonetheless, to isolate the specific effect of backtracking, we performed Ordinary Least Squares (OLS) regression. We predicted rating using the number of backtrack, game duration, the number of articles visited , and the minimal number of articles seperating the two articles.
 
 <iframe 
   src="figures/OLS1.html"
-  style="width: 100%; height: 80vh; border: 0;"
+  style="width: 100%; height: 100vh; border: 0;"
 ></iframe>
 
 
@@ -200,7 +205,7 @@ Backtracking has a clear and substantial impact on how players perceive the diff
 
 <iframe 
   src="figures/OLS2.html"
-  style="width:100%; height:80vh; border:0;">
+  style="width:100%; height:100vh; border:0;">
 </iframe>
 
 
@@ -218,7 +223,7 @@ The first linear regression could not show this effect since bactracking strongl
 
 <iframe 
   src="figures/backtrack_rating_relationships.html"
-  style="width: 100%; height: 100vh; border: 0;"
+  style="width: 100%; height: 90vh; border: 0;"
 ></iframe>
 
 Nonetheless, the effect of backtracking is independent of path length and duration and it strongly lowers the difficulty rating that the adventures rate their games !

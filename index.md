@@ -6,7 +6,7 @@ layout: test
 
 ## Chapter 1 : Finding your way in the big bad network
 
-Imagine this: you are an untrademarked, totally unspecified explorer and you are tasked with exploring an ancient ruin containing all of humanity's knowledge. You are given a map and you have to find your way from one point in the ruin to another. Pretty easy, right?
+Imagine this: you are an untrademarked, totally unspecific explorer and you are tasked with exploring an ancient ruin containing all of humanity's knowledge. You are given a map and you have to find your way from one point in the ruin to another. Pretty easy, right?
 
 Now imagine you are given this map:
 
@@ -14,6 +14,11 @@ Now imagine you are given this map:
 
 This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 
 
+You can take a look at what that can look like here by choosing a past adventure other explorers have gone on:
+
+<iframe src="browsers/network_map_clustered_nodes_with_dropdown.html" width="100%" height="600" style="border:none;"></iframe>
+
+This map is maybe closer to how you would actually imagine it to be to orient yourself. The articles are sorted by proximity of vocabulary used in each one, so Paris is sorted close to France, anything to do with Poland forms a cluster... 
 
 Now this task sounds pretty scary, we get it. 
 
@@ -26,14 +31,9 @@ You could set out and get caught in dangerous traps. You may want to go back, re
   frameborder="0">
 </iframe>
 
-20% of paths in our Wikispeedia dataset contain backtracking. 
-You can take a look at what paths past users have done here:
+About 20% of paths in our Wikispeedia dataset contain backtracking. 
 
-<iframe src="browsers/network_map_clustered_nodes_with_dropdown.html" width="100%" height="600" style="border:none;"></iframe>
-
-This map is maybe closer to how you would actually imagine it to be to orient yourself. The articles are sorted by proximity of vocabulary used in each one, so Paris is sorted close to France, anything to do with Poland forms a cluster... 
-
-When we saw the amount of bcaktracking users did, we immediately wondered where these people backtracked to, what pushed them to go back and, obviously, whether it would make them more likely to lose the game. 
+When we saw this, we immediately wondered where these people backtracked to, what pushed them to go back and, obviously, whether it would make them more likely to lose the game. 
 
 Let's take a look!
 
@@ -82,9 +82,9 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 
 ### Hypothesis 2 : Subjects in the path
 
-Another reason we think users may want to go back is if they are not familiar with the subject of the final article or with the subject of the starting article. Lack of familiarity would prevent them from being to plan an efficient path and could therefore cause some backtracking. 
+Another potential source of backtracking we wanted to look into is the category of the articles in the path. The subject of the start point and end point could have a large impact on the amount of backtracking.
 
-To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset.
+To look into this hypothesis, we decided to create heatmaps of start and end categories of articles in paths of the dataset to see if any combination of two categories would lead to more backtracking.
 
 <iframe 
   src="figures/category_heatmaps.html"
@@ -95,7 +95,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
 
 Both finished and unfinished paths seemed to carry more backtracking in the same category combinations. What this analysis reveals is that some category combinations of start and end article seem to cause more backtracking. For example, when users are tasked with navigating from Science to Science, they tend to backtrack the most. Now, there are several reasons why this could happen. 
 
-As an explorer, if someone tells you to go to Lithuania and you don't know where Lithuania is, well, you could get lost somewhere between Estonia and Latvia and need a few attempts to find your way. 
+It's hard to find your way when you don't know where you're going, right ? As an explorer, if someone tells you to go to Lithuania and you don't know where Lithuania is, well, you could get lost somewhere between Estonia and Latvia and need a few attempts to find your way. Users could be more likely to backtrack when exploring these categories because they are simply unfamiliar with the subjects (hence why science, history and technology seem to cause the most backtracking)
 
 Another possibility is that maybe people are just interested in the subject. Maybe these explorers just wanted to spend more time reading up on the subject.   
 
@@ -109,9 +109,9 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 | **4**| Borage | Science |
 | **5**| Lake_Victoria | Geography |
 
-In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. When you're not familiar with a destination, it's hard to find your way to it, right ? Players backtracked more when they were looking for these 5 articles in particular, perhaps because unfamiliarity with the subjects. 
+In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. 
 
-Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
+And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
 
 
 

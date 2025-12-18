@@ -99,7 +99,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   <iframe 
     src="figures/category_heatmap1.html"
     width="100%"
-    height="700"
+    height="600"
     frameborder="0">
   </iframe>
 </div>
@@ -108,7 +108,7 @@ To look into this hypothesis, we decided to create heatmaps of start and end cat
   <iframe 
     src="figures/category_heatmap2.html"
     width="100%"
-    height="700"
+    height="600"
     frameborder="0">
   </iframe>
 </div>
@@ -248,16 +248,11 @@ To check that we accurately caught this effect, we even ran a second OLS with st
 
 The first linear regression could not show this effect since bactracking strongly affect the game duration and path length. More backtracking is associated with longer path length and longer game duration as shown in the following plots. Each additional backtrack increases the total path length by about 2.3 articles and adds roughly 51 seconds to the completion time. Backtracking therefore makes trajectories longer and substantially slows players down. 
 
-<iframe 
-  src="figures/backtrack_rating_relationships.html"
-  style="width: 100%; height: 90vh; border: 0;"
-></iframe>
-
 <div style="display: flex; justify-content: center;">
   <iframe 
     src="figures/backtrack_rating_relationships.html"
     width="100%"
-    height="900"
+    height="500"
     frameborder="0">
   </iframe>
 </div>

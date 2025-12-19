@@ -13,6 +13,7 @@ Now imagine you are given this map:
 
 
 <div class="jungle-reveal">
+    <div class="jungle-reveal-click-catcher"></div>
     <div class="jungle-reveal-overlay">
         <div class="jungle-leaf jungle-leaf-left"></div>
         <div class="jungle-leaf jungle-leaf-right"></div>

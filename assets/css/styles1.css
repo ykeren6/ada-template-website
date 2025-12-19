@@ -1,48 +1,36 @@
 body {
-  color: white;
-  background-image: linear-gradient(#2c1810 0%, #5e9952 100%);
-  background-attachment: scroll;
-  margin: 0;
-  padding: 0;
+  background-color: #fff;
+  padding:50px;
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 400;
+  color:#595959;
+  font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+  color:#222;
+  margin:0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
+  margin:0 0 20px;
 }
 
 h1, h2, h3 {
-  line-height: 1.1;
+  line-height:1.1;
 }
 
 h1 {
-  color: #ddbaa2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.17);
-  font-size: 2.5em;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 10px;
+  font-size:28px;
   font-weight: 500;
 }
 
 h2 {
-  color: #f5f5dc;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+  color:#a5946e;
   font-weight: 500;
 }
 
-h3 {
-  color: #fad5a2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
-  font-weight: 500;
-}
-
-h4, h5, h6 {
-  color: #fad5a2;
+h3, h4, h5, h6 {
+  color:#947350;
   font-weight: 500;
 }
 
@@ -67,17 +55,8 @@ a:hover small {
 }
 
 .wrapper {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 40px;
-  background: rgba(246, 240, 240, 0.3);
-  border: 3px solid #d4af37;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.wrapper p,
-.wrapper li {
-  text-align: justify;
+  width:1080px;
+  margin:0 auto;
 }
 
 blockquote {
@@ -290,7 +269,42 @@ footer {
   }
 }
 
-/* Utility classes */
+/* Test layout specific styles */
+body.test-layout {
+  color: white;
+  background-image: linear-gradient(#2c1810 0%, #5e9952 100%);
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+body.test-layout .wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(246, 240, 240, 0.3);
+  border: 3px solid #d4af37;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+body.test-layout h1 {
+  color: #ddbaa2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.17);
+  font-size: 2.5em;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+body.test-layout h2 {
+  color: #f5f5dc;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+body.test-layout h3 {
+  color: #fad5a2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
 .artifact {
   border-left: 4px solid #d4af37;
   margin: 20px 0;
@@ -301,6 +315,17 @@ footer {
 .temple-accent {
   color: #d4af37;
   font-weight: bold;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.wrapper p,
+.wrapper li {
+  text-align: justify;
 }
 
 .danger-warning {

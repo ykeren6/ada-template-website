@@ -178,7 +178,10 @@ And you, do you think you can do it without getting lost ? Would you have found 
 
 ## Chapter 4 : Will backtracking doom you to fail ?
 
-### Paths with and without backtracking in successful and unsuccessful paths
+It's good to know why our Adaventurers backtrack but now, does it bring them success... or does it doom them to fail?
+
+<!-- ### Paths with and without backtracking in successful and unsuccessful paths -->
+It is interesting to show the proportion of paths which contain backtracks (or which do not!).
 
 <div style="text-align: center;">
     <iframe 
@@ -190,9 +193,11 @@ And you, do you think you can do it without getting lost ? Would you have found 
     </iframe>
 </div>
 
+Actually, it does not change too much. About 20.9% of unfinished paths and 17.5% of finished paths use backtracking along the way. 
 
-### Number of backtracks in finished and unfinished paths histogram
+<!-- ### Number of backtracks in finished and unfinished paths histogram -->
 
+Now, let's inspect the distribution of the number of backtracks in both finished and unfinished paths.
 
 <iframe 
   src="figures/distrib_fin_vs_unfin.html"
@@ -201,19 +206,26 @@ And you, do you think you can do it without getting lost ? Would you have found 
   frameborder="0">
 </iframe>
 
+Once again, the distribution is almost the same for both successful and unsuccessful games. 
+
+This means that, well... overall it does not really seem to have a significant effect on the success of the game.
 
 
 This graph shows us the distribution of paths per certain amount of backtracking. It serves to highlight the wide range of amounts of backtracking in the database.
 
 ### Spearman's Rank correlation
 
-In order to determine whether there was any significant non linear correlation between backtraking and success, we computed the Spearman's rank correlation on paths with and without backtracking and failure and success.
+In order to determine whether there was any significant non linear correlation between backtraking and success, let's compute a statistical test such as the Spearman's rank correlation on paths with and without backtracking and failure and success.
 
 
 // Results of Spearman
 
 
-Games where the user has backtracked have a slight tendency to be unsuccessful.
+We observe that games in which the user has backtracked have a slight tendency to be unsuccessful.
+
+This confirms that there exists very low association between backtracking and outcome of the game.
+
+Thus, we do not think our backtracking adventurers will be doomed, so... if you enjoy backtracking, you do you!
 
 
 

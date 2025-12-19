@@ -213,13 +213,18 @@ This means that, well... overall it does not really seem to have a significant e
 
 This graph shows us the distribution of paths per certain amount of backtracking. It serves to highlight the wide range of amounts of backtracking in the database.
 
-### Spearman's Rank correlation
+### Spearman's Rank correlation coefficient
 
 In order to determine whether there was any significant non linear correlation between backtraking and success, let's compute a statistical test such as the Spearman's rank correlation on paths with and without backtracking and failure and success.
 
+In a nutshell, Spearman’s rank correlation coefficient (ρ) measures the strength and direction of the relationship between two ranked variables. It ranges from −1 (perfect negative correlation) to +1 (perfect positive correlation) while 0 indicates no correlation.
 
-// Results of Spearman
+<!-- // Results of Spearman -->
 
+| Backtracking | Spearman's coefficient | P-value |
+|:---|:---|:---|
+| With | -0.04 | 2.5e-29 |
+| Without | 0.04 | 2.5e-29 |
 
 We observe that games in which the user has backtracked have a slight tendency to be unsuccessful.
 

@@ -12,7 +12,14 @@ Imagine this: you are an untrademarked, totally unspecific explorer and you are 
 Now imagine you are given this map:
 
 
-<iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+<div class="jungle-reveal">
+    <div class="jungle-reveal-overlay">
+        <div class="jungle-leaf jungle-leaf-left"></div>
+        <div class="jungle-leaf jungle-leaf-right"></div>
+    </div>
+    <div class="jungle-reveal-hint">🌿 Click to reveal 🌿</div>
+    <iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+</div>
 
 
 This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 

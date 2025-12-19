@@ -351,29 +351,30 @@ footer {
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  will-change: transform;
 }
 
 .jungle-leaf::before {
   content: '';
   position: absolute;
-  top: -20%;
-  left: -10%;
-  right: -10%;
-  bottom: -20%;
+  top: -10%;
+  left: 0;
+  right: 0;
+  bottom: -10%;
   background-image: 
     repeating-linear-gradient(
       45deg,
       transparent,
-      transparent 5px,
-      rgba(70, 120, 40, 0.2) 5px,
-      rgba(70, 120, 40, 0.2) 8px
+      transparent 8px,
+      rgba(70, 120, 40, 0.15) 8px,
+      rgba(70, 120, 40, 0.15) 10px
     ),
     repeating-linear-gradient(
       -45deg,
       transparent,
-      transparent 7px,
-      rgba(60, 100, 35, 0.15) 7px,
-      rgba(60, 100, 35, 0.15) 10px
+      transparent 12px,
+      rgba(60, 100, 35, 0.1) 12px,
+      rgba(60, 100, 35, 0.1) 14px
     );
   opacity: 0.8;
 }
@@ -386,19 +387,13 @@ footer {
   right: 0;
   bottom: 0;
   background-image:
-    radial-gradient(ellipse 3px 50px at 15% 10%, rgba(80, 130, 50, 0.9) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 60px at 25% 25%, rgba(70, 115, 45, 0.8) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 55px at 35% 45%, rgba(75, 120, 48, 0.85) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 65px at 45% 60%, rgba(65, 110, 42, 0.9) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 50px at 55% 75%, rgba(72, 118, 46, 0.8) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 58px at 65% 15%, rgba(78, 125, 50, 0.85) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 52px at 75% 35%, rgba(68, 112, 44, 0.9) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 48px at 85% 55%, rgba(74, 122, 47, 0.8) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 62px at 20% 70%, rgba(76, 124, 49, 0.85) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 54px at 40% 85%, rgba(70, 116, 45, 0.9) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 56px at 60% 30%, rgba(73, 119, 46, 0.8) 0%, transparent 100%),
-    radial-gradient(ellipse 3px 50px at 80% 65%, rgba(77, 126, 50, 0.85) 0%, transparent 100%);
-  opacity: 0.7;
+    radial-gradient(ellipse 2px 40px at 20% 15%, rgba(80, 130, 50, 0.7) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 45px at 40% 35%, rgba(70, 115, 45, 0.7) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 38px at 60% 55%, rgba(75, 120, 48, 0.7) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 42px at 80% 75%, rgba(72, 118, 46, 0.7) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 44px at 25% 65%, rgba(68, 112, 44, 0.7) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 40px at 70% 25%, rgba(76, 124, 49, 0.7) 0%, transparent 100%);
+  opacity: 0.6;
 }
 
 .jungle-leaf-left {
@@ -432,6 +427,7 @@ footer {
   pointer-events: none;
   transition: opacity 0.4s ease, transform 0.4s ease;
   animation: pulse 2s ease-in-out infinite;
+  will-change: opacity, transform;
 }
 
 .jungle-reveal.revealed .jungle-reveal-hint {
@@ -448,5 +444,28 @@ footer {
   50% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+/* Performance optimizations */
+iframe {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  content-visibility: auto;
+}
+
+.jungle-reveal.revealed .jungle-reveal-overlay {
+  pointer-events: none;
+}
+
+/* Reduce animations on low-end devices */
+@media (prefers-reduced-motion: reduce) {
+  .jungle-leaf {
+    transition: transform 0.3s ease;
+  }
+  
+  .jungle-reveal-hint {
+    animation: none;
   }
 }

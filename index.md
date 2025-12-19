@@ -108,6 +108,13 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 ### Hypothesis 1 : Experience level
 
 
+As one could say, "Adventure is the best teacher, and experience is the treasure it leaves behind". There are lots of Wikispeedia adventurers that have tried to forge a path through the jungle of articles. 
+
+That being said, a good portion of them are only part-time adventurers and have only played a single game or two, which results in a quite high percentage of desertion (only 52% finished paths!). On the other hand, the most seasoned adventurers have made quite a long journey in Wikispeedia, with some having instigated a few thousand games. They also have had more success in their quest (more than 82% finished paths for 301+ sessions!). 
+
+It is very interesting to observe the strategy of our new adventurers being different than the one of our most seasoned ones: the latter had the courage to embark on more quests, but also the wisdom to retrace their steps when necessary. Indeed their average backtracking per session increases with the number of games they played.
+
+
 <iframe 
   src="figures/experience_level.html"
   width="100%"

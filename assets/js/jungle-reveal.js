@@ -1,10 +1,13 @@
 // Jungle Reveal Effect - Click to reveal figures
 document.addEventListener('DOMContentLoaded', function() {
-    const reveals = document.querySelectorAll('.jungle-reveal');
+    const clickCatchers = document.querySelectorAll('.jungle-reveal-click-catcher');
     
-    reveals.forEach(function(reveal) {
-        reveal.addEventListener('click', function() {
-            this.classList.add('revealed');
+    clickCatchers.forEach(function(catcher) {
+        catcher.addEventListener('click', function() {
+            const reveal = this.closest('.jungle-reveal');
+            if (reveal) {
+                reveal.classList.add('revealed');
+            }
         });
     });
 });

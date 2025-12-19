@@ -228,9 +228,7 @@ In a nutshell, Spearman’s rank correlation coefficient (ρ) measures the stren
 
 We observe that games in which the user has backtracked have a slight tendency to be unsuccessful.
 
-This confirms that there exists very low association between backtracking and outcome of the game.
-
-Thus, we do not think our backtracking adventurers will be doomed, so... if you enjoy backtracking, you do you!
+This confirms that there exists very low association between backtracking and outcome of the game. Thus, we do not think our backtracking adventurers will be doomed, so... if you enjoy backtracking, you do you!
 
 
 
@@ -247,6 +245,13 @@ The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
 </details>
+
+
+
+
+
+
+
 
 
 ## Chapter 5 : The effect of backtracking on user difficulty perception

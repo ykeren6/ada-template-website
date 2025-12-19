@@ -19,7 +19,7 @@ Now imagine you are given this map:
         <div class="jungle-leaf jungle-leaf-right"></div>
     </div>
     <div class="jungle-reveal-hint">🌿 Click to reveal 🌿</div>
-    <iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+    <iframe data-src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 </div>
 
 

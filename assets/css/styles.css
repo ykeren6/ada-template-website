@@ -412,11 +412,11 @@ footer {
 }
 
 .jungle-reveal.revealed .jungle-leaf-left {
-  transform: translateX(-100%) rotate(-5deg);
+  transform: translateX(-100%);
 }
 
 .jungle-reveal.revealed .jungle-leaf-right {
-  transform: translateX(100%) rotate(5deg);
+  transform: translateX(100%);
 }
 
 .jungle-reveal-hint {

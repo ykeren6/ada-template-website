@@ -68,8 +68,8 @@ To begin with, we will determine which sites are network hubs and which are back
     <iframe 
       src="figures/hub_network_top30.html"
       style="display: inline-block;"
-      width="90%"
-      height="600"
+      width="95%"
+      height="650"
       frameborder="0">
     </iframe>
 </div>

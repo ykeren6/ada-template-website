@@ -236,7 +236,7 @@ This confirms that there exists very low association between backtracking and ou
 
 
 <details>
-<summary>Honorable mention</summary> <br>
+<summary>Honorable mention</summary>
 Before we move on to the final leg of our ADAventure, we wanted to ask you a quick question.
 
 When you saw our first map, did you wonder what that big circle in the middle is ?

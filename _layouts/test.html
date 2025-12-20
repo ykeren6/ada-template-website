@@ -9,74 +9,36 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.site.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Trajan+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&family=Lora:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            color: white;
-            background-image: linear-gradient(#2c1810 0%, #5e9952 100%);
-            background-attachment: scroll;
-            margin: 0;
-            padding: 0;
-            /* font-family is unspecified, so browser default is used */
-        }
-
-        .wrapper {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 40px;
-            background: rgba(246, 240, 240, 0.3);
-            border: 3px solid #d4af37;
-            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15);
-        }
-
+        /* Main titles */
         h1 {
-            color: #ddbaa2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.17);
-            font-size: 2.5em;
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 10px;
-            font-family: 'Trajan Pro', serif;
+            font-family: 'Cormorant SC', serif;
+            font-size: 3rem;
+            letter-spacing: 0.08em;
         }
 
         h2 {
-            color: #f5f5dc;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
-            font-family: 'Trajan Pro', serif;
+            font-family: 'Cormorant SC', serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.06em;
         }
 
+        /* Subtitles */
         h3 {
-            color: #fad5a2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
             font-family: 'Lora', serif;
+            font-size: 1.6rem;
+            letter-spacing: 0.02em;
         }
 
-        .artifact {
-            border-left: 4px solid #d4af37;
-            margin: 20px 0;
-            background: rgba(212, 175, 55, 0.1);
-            padding: 15px 20px;
-            font-family: 'Lora', serif;
-        }
-
-        .temple-accent {
-            color: #d4af37;
-            font-weight: bold;
-        }
-
-        .danger-warning {
-            color: #ff6b6b;
-            font-style: italic;
-            font-weight: bold;
-        }
-
-        iframe {
-            display: block;
-            margin: 0 auto; /* centers all iframes */
-            border: none;
+        /* Body text */
+        body {
+            font-size: 1rem;
+            line-height: 1.6;
         }
     </style>
 </head>

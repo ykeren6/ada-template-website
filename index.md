@@ -54,6 +54,7 @@ When we saw this, we immediately wondered where these people backtracked to, wha
 
 Let's take a look!
 
+<br><br>
 
 ## Chapter 2 : Where did you come from, where did you go?
 
@@ -102,6 +103,7 @@ Why would that be a problem, you ask ?
 
 Well, since many sites share the same backtrack score, their ranking is no longer very meaningful if we focus on low scores. For example, take a site with a backtrack score of 1. Could you say precisely which index it should occupy in the dataframe? A normal person cannot know that. It could be element 1700 or 2400, depending of the ordrer that the code is processing the data. This will create a very significant variance and it's this aspect that greatly reduces correlation as values are added.
 
+<br><br>
 
 ## Chapter 3 : Why are users backtracking?
 
@@ -175,6 +177,7 @@ In the list, the articles that appear are part of the categories that were highl
 
 And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
 
+<br><br>
 
 ## Chapter 4 : Will backtracking doom you to fail ?
 
@@ -248,11 +251,7 @@ It turns out that, at the bottom of every single Wikispeedia page, there is a li
 
 
 
-
-
-
-
-
+<br><br>
 
 ## Chapter 5 : The effect of backtracking on user difficulty perception
 
@@ -339,6 +338,7 @@ The first linear regression could not show this effect since bactracking strongl
 
 Nonetheless, the effect of backtracking is independent of path length and duration, and it strongly reduces the difficulty ratings given by adventurers to their games!
 
+<br><br>
 
 ## Chapter 6 : Conclusion
 

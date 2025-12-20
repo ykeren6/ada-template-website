@@ -81,13 +81,12 @@ a:hover small {
   margin: 40px auto;
   padding: 40px;
   
-  /* Increased opacity slightly for readability and added a blur filter */
   background: rgba(40, 30, 30, 0.75); 
   backdrop-filter: blur(5px); 
   -webkit-backdrop-filter: blur(5px);
   
   border: 3px solid #d4af37;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow to make it pop off the background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
 }
 
 .wrapper p,
@@ -133,6 +132,13 @@ dt {
 
 th {
   color:#fad5a2;
+}
+
+summary {
+  cursor: pointer;
+  color: #fad5a2; 
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 img {

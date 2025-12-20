@@ -235,18 +235,19 @@ This confirms that there exists very low association between backtracking and ou
 
 
 
-<details> Honorable mention
+<details>
+<summary>Honorable mention</summary> <br>
 Before we move on to the final leg of our ADAventure, we wanted to ask you a quick question.
 
 When you saw our first map, did you wonder what that big circle in the middle is ?
 
 Well, so did we. From it's size on the map, we were able to determine it is the most connected article in the game.
 
-What subject is so invaluable, so **universal** that it is the most connected article in the game? 
+What subject is so invaluable, so universal that it is the most connected article in the game? 
 
 The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
-It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
+It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are no hyperlinks on this page. You have found yourself in a dead end. 
 </details>
 
 

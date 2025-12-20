@@ -69,7 +69,7 @@ To begin with, we will determine which sites are network hubs and which are back
       src="figures/hub_network_top30.html"
       style="display: inline-block;"
       width="100%"
-      height="670"
+      height="550"
       frameborder="0">
     </iframe>
 </div>

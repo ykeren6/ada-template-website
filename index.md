@@ -12,7 +12,15 @@ Imagine this: you are an untrademarked, totally unspecific explorer and you are 
 Now imagine you are given this map:
 
 
-<iframe src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+<div class="jungle-reveal">
+    <div class="jungle-reveal-click-catcher"></div>
+    <div class="jungle-reveal-overlay">
+        <div class="jungle-leaf jungle-leaf-left"></div>
+        <div class="jungle-leaf jungle-leaf-right"></div>
+    </div>
+    <div class="jungle-reveal-hint">🌿 Click to reveal 🌿</div>
+    <iframe data-src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+</div>
 
 
 This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 
@@ -100,12 +108,20 @@ Well, since many sites share the same backtrack score, their ranking is no longe
 ### Hypothesis 1 : Experience level
 
 
+As one could say, "Adventure is the best teacher, and experience is the treasure it leaves behind". There are lots of Wikispeedia adventurers that have tried to forge a path through the jungle of articles. 
+
+Here is an overview showing the experience level of the players and their backtracking use.
+
 <iframe 
   src="figures/experience_level.html"
   width="100%"
   height="550"
   frameborder="0">
 </iframe>
+
+Needless to say, a good portion of them are only part-time adventurers and have only played a single game or two, which results in a quite high percentage of desertion (only 52% finished paths!). On the other hand, the most seasoned adventurers have made quite a long journey in Wikispeedia, with some having instigated a few thousand games. They also have had more success in their quest (more than 82% finished paths for 301+ sessions!). 
+
+It is very interesting to observe the strategy of our new adventurers being different than the one of our most seasoned ones: the latter had the courage to embark on more quests, but also the wisdom to retrace their steps when necessary. Indeed their average backtracking per session increases with the number of games they played.
 
 
 ### Hypothesis 2 : Subjects in the path
@@ -162,7 +178,10 @@ And you, do you think you can do it without getting lost ? Would you have found 
 
 ## Chapter 4 : Will backtracking doom you to fail ?
 
-### Paths with and without backtracking in successful and unsuccessful paths
+It's good to know why our Adaventurers backtrack but now, does it bring them success... or does it doom them to fail?
+
+<!-- ### Paths with and without backtracking in successful and unsuccessful paths -->
+It is interesting to show the proportion of paths which contain backtracks (or which do not!).
 
 <div style="text-align: center;">
     <iframe 
@@ -174,9 +193,11 @@ And you, do you think you can do it without getting lost ? Would you have found 
     </iframe>
 </div>
 
+Actually, it does not change too much. About 20.9% of unfinished paths and 17.5% of finished paths use backtracking along the way. 
 
-### Number of backtracks in finished and unfinished paths histogram
+<!-- ### Number of backtracks in finished and unfinished paths histogram -->
 
+Now, let's inspect the distribution of the number of backtracks in both finished and unfinished paths.
 
 <iframe 
   src="figures/distrib_fin_vs_unfin.html"
@@ -185,19 +206,29 @@ And you, do you think you can do it without getting lost ? Would you have found 
   frameborder="0">
 </iframe>
 
+Once again, the distribution is almost the same for both successful and unsuccessful games. 
+
+This means that, well... overall it does not really seem to have a significant effect on the success of the game.
 
 
 This graph shows us the distribution of paths per certain amount of backtracking. It serves to highlight the wide range of amounts of backtracking in the database.
 
-### Spearman's Rank correlation
+### Spearman's Rank correlation coefficient
 
-In order to determine whether there was any significant non linear correlation between backtraking and success, we computed the Spearman's rank correlation on paths with and without backtracking and failure and success.
+In order to determine whether there was any significant non linear correlation between backtraking and success, let's compute a statistical test such as the Spearman's rank correlation on paths with and without backtracking and failure and success.
 
+In a nutshell, Spearman’s rank correlation coefficient (ρ) measures the strength and direction of the relationship between two ranked variables. It ranges from −1 (perfect negative correlation) to +1 (perfect positive correlation) while 0 indicates no correlation.
 
-// Results of Spearman
+<!-- // Results of Spearman -->
 
+| Backtracking | Spearman's coefficient | P-value |
+|:---|:---|:---|
+| With | -0.04 | 2.5e-29 |
+| Without | 0.04 | 2.5e-29 |
 
-Games where the user has backtracked have a slight tendency to be unsuccessful.
+We observe that games in which the user has backtracked have a slight tendency to be unsuccessful.
+
+This confirms that there exists very low association between backtracking and outcome of the game. Thus, we do not think our backtracking adventurers will be doomed, so... if you enjoy backtracking, you do you!
 
 
 
@@ -214,6 +245,13 @@ The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are **no hyperlinks** on this page. You have found yourself in a dead end. 
 </details>
+
+
+
+
+
+
+
 
 
 ## Chapter 5 : The effect of backtracking on user difficulty perception

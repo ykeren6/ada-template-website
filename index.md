@@ -68,7 +68,7 @@ To begin with, we will determine which sites are network hubs and which are back
     <iframe 
       src="figures/hub_network_top30.html"
       style="display: inline-block;"
-      width="80%"
+      width="100%"
       height="650"
       frameborder="0">
     </iframe>
@@ -78,7 +78,7 @@ To begin with, we will determine which sites are network hubs and which are back
     <iframe 
       src="figures/hub_backtrack_top30.html"
       style="display: inline-block;"
-      width="80%"
+      width="100%"
       height="650"
       frameborder="0">
     </iframe>
@@ -94,7 +94,7 @@ In order to determine whether there is a direct correlation between the number o
     <iframe 
       src="figures/compare_hub_rankings.html"
       style="display: inline-block;"
-      width="80%"
+      width="100%"
       height="650"
       frameborder="0">
     </iframe>
@@ -110,7 +110,7 @@ Let's go a little further to better understand what is happening in the high-den
     <iframe 
       src="figures/slope_similarity.html"
       style="display: inline-block;"
-      width="80%"
+      width="100%"
       height="650"
       frameborder="0">
     </iframe>
@@ -128,7 +128,7 @@ There is something that has not yet been presented, namely, the distribution of 
     <iframe 
       src="figures/compare_hub_distributions.html"
       style="display: inline-block;"
-      width="80%"
+      width="100%"
       height="650"
       frameborder="0">
     </iframe>

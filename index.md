@@ -64,9 +64,25 @@ People use backtracking sometimes. However, before asking why, let's first look 
 To begin with, we will determine which sites are network hubs and which are backtracking hubs. In this context, network hubs are sites that have a large number of hyperlinks, and therefore connections to other sites, while backtracking hubs are sites that have been found to be a return point when using backtrack.
 
 
-![Network hubs](figures/Network_hubs.png)
+<div style="text-align: center;">
+    <iframe 
+      src="figures/hub_network_top30.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
 
-![Backtracking hubs](figures/Backtracking_hubs.png)
+<div style="text-align: center;">
+    <iframe 
+      src="figures/hub_backtrack_top30.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 Interesting... We can already see that certain sites are quite high up in both distributions. But is this a happy coincidence, or could there actually be a hidden connection between the two ?
@@ -74,7 +90,15 @@ Interesting... We can already see that certain sites are quite high up in both d
 In order to determine whether there is a direct correlation between the number of links and the backtrace count, we need to look at all the points. 
 
 
-![Comparaison ranking hubs](figures/Comparaison_ranking_hubs.png)
+<div style="text-align: center;">
+    <iframe 
+      src="figures/compare_hub_rankings.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 The correlation between the number of links and the number of backtraces is quite low, suggesting that the hubs in the network are not necessarily the same as those frequently used for backtracking. However, there is a point of high density on the right side of the graph, indicating that there is a certain set of sites that follows the correlation. 
@@ -82,7 +106,15 @@ The correlation between the number of links and the number of backtraces is quit
 Let's go a little further to better understand what is happening in the high-density zone. Let's do a Spearman Correlation and P-Value test for the data sets that are the first n elements of each dataFrame. The idea is to identify which sets produce the highest correlation. Why? We'll get to that very soon...
 
 
-![Slope similarity](figures/Slope_similarity.png)
+<div style="text-align: center;">
+    <iframe 
+      src="figures/slope_similarity.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 What can we see? Well, first of all, the score decreases as more data is taken into account, which is not very encouraging for the next parts. But we also notice that with few elements, the score is not so bad. We have a respectable correlation score with the first 250 elements or so, which was already indicated by the previous graph.
@@ -92,7 +124,15 @@ You're probably thinking that this is simply the effect of the law of small numb
 There is something that has not yet been presented, namely, the distribution of hubs.
 
 
-![Hubs distribution](figure/Hubs_distribution.png)
+<div style="text-align: center;">
+    <iframe 
+      src="figures/compare_hub_distributions.html"
+      style="display: inline-block;"
+      width="80%"
+      height="650"
+      frameborder="0">
+    </iframe>
+</div>
 
 
 How does this distribution change the situation? First of all, the distributions do not follow the same trend, but that is not very important. The reason for the previous rather weak results is highlighted here.

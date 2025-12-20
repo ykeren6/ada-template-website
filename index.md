@@ -66,7 +66,7 @@ To begin with, we will determine which sites are network hubs and which are back
 
 <div style="text-align: center;">
     <iframe 
-      src="figures/hub_network_top30.html"
+      src="figures/hub_network_top25.html"
       style="display: inline-block;"
       width="95%"
       height="600"
@@ -76,7 +76,7 @@ To begin with, we will determine which sites are network hubs and which are back
 
 <div style="text-align: center;">
     <iframe 
-      src="figures/hub_backtrack_top30.html"
+      src="figures/hub_backtrack_top25.html"
       style="display: inline-block;"
       width="95%"
       height="600"

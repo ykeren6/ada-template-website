@@ -1,5 +1,5 @@
 body {
-  color: white;
+  color: #f5f5dc;
   
   background-color: #0d1a0d;
 
@@ -46,13 +46,13 @@ h2 {
 }
 
 h3 {
-  color: #fad5a2;
+  color: #ddbaa2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
   font-weight: 500;
 }
 
 h4, h5, h6 {
-  color: #fad5a2;
+  color: #ddbaa2;
   font-weight: 500;
 }
 
@@ -85,7 +85,7 @@ a:hover small {
   backdrop-filter: blur(5px); 
   -webkit-backdrop-filter: blur(5px);
   
-  border: 3px solid #fad5a2;
+  border: 3px solid #ddbaa2;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
 }
 
@@ -126,17 +126,17 @@ th, td {
 }
 
 dt {
-  color:#fad5a2;
+  color:#ddbaa2;
   font-weight:500;
 }
 
 th {
-  color:#fad5a2;
+  color:#ddbaa2;
 }
 
 summary {
   cursor: pointer;
-  color: #fad5a2; 
+  color: #ddbaa2; 
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -196,7 +196,7 @@ header ul a:active {
 }
 
 strong {
-  color:#fad5a2;
+  color:#ddbaa2;
   font-weight:500;
 }
 
@@ -440,7 +440,7 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #d4af37;
+  color: #ddbaa2;
   font-size: 1.2em;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);

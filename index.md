@@ -19,7 +19,7 @@ Now imagine you are given this map:
         <div class="jungle-leaf jungle-leaf-right"></div>
     </div>
     <div class="jungle-reveal-hint">🌿 Click to reveal 🌿</div>
-    <iframe data-src="browsers/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
+    <iframe data-src="figures/network_map_random_nodes.html" width="100%" height="600" style="border:none;"></iframe>
 </div>
 
 
@@ -28,7 +28,7 @@ This is the task given to you in the game Wikispeedia: you have to find your way
 You can take a look at what that can look like here by choosing a past adventure other explorers have gone on:
 
 
-<iframe src="browsers/network_map_clustered_nodes_dropdown.html" width="100%" height="600" style="border:none;"></iframe>
+<iframe src="figures/network_map_clustered_nodes_with_dropdown.html" width="100%" height="600" style="border:none;"></iframe>
 
 
 This map is maybe closer to how you would actually imagine it to be to orient yourself. The articles are sorted by proximity of vocabulary used in each one, so Paris is sorted close to France, anything to do with Poland forms a cluster... 

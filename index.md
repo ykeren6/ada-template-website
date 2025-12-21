@@ -243,7 +243,7 @@ Actually, it does not change too much. About 20.9% of unfinished paths and 17.5%
 Now, let's inspect the distribution of the number of backtracks in both finished and unfinished paths.
 
 <iframe 
-  src="figures/distrib_fin_vs_unfin.html"
+  src="figures/backtrack_distribution.html"
   width="100%"
   height="550"
   frameborder="0">

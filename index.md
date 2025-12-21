@@ -231,7 +231,7 @@ It is interesting to show the proportion of paths which contain backtracks (or w
       src="figures/stacked_columns.html"
       style="display: inline-block;"
       width="63%"
-      height="450"
+      height="550"
       frameborder="0">
     </iframe>
 </div>

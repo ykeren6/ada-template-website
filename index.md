@@ -215,7 +215,7 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 
 In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday life and Science. 
 
-And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
+And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out <a href="https://dlab.epfl.ch/wikispeedia/play/" target="_blank" rel="noopener noreferrer">here</a>.
 
 <br><br>
 

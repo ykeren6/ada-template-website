@@ -101,7 +101,7 @@ In order to determine whether there is a direct correlation between the number o
 </div>
 
 
-The correlation between the number of links and the number of backtraces is quite low, suggesting that the hubs in the network are not necessarily the same as those frequently used for backtracking. However, there is a point of high density on the right side of the graph, indicating that there is a certain set of sites that follows the correlation. 
+The correlation between the number of links and the number of backtraces is quite low, suggesting that the hubs in the network are not necessarily the same as those frequently used for backtracking. However, there is a point of high density on the back left side of the graph, indicating that there is a certain set of sites that follows the correlation. 
 
 Let's go a little further to better understand what is happening in the high-density zone. Let's do a Spearman Correlation and P-Value test for the data sets that are the first n elements of each dataFrame. The idea is to identify which sets produce the highest correlation. Why? We'll get to that very soon...
 
@@ -117,7 +117,7 @@ Let's go a little further to better understand what is happening in the high-den
 </div>
 
 
-What can we see? Well, first of all, the score decreases as more data is taken into account, which is not very encouraging for the next parts. But we also notice that with few elements, the score is not so bad. We have a respectable correlation score with the first 250 elements or so, which was already indicated by the previous graph.
+What can we see? Well, first of all, the score decreases as more data is taken into account, which is not very encouraging for the next parts. But we also notice that with few elements, the score is not so bad. We have a respectable correlation score with the first 200 elements or so, which was already indicated by the previous graph.
 
 You're probably thinking that this is simply the effect of the law of small numbers, which produces results that are not necessarily relevant. However, you would be wrong to think that this is all there is to say...
 

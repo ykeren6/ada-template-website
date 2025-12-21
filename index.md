@@ -206,14 +206,14 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 
 | Rank | Article | Category | 
 | :--- | :--- | :--- |
-| **1**| Morecambe_and_Wise | Everyday_life|
-| **2**| Felix_the_Cat | Everyday_life |
-| **3**| Nurse_sharks | Science |
+| **1**| Morecambe and Wise | Everyday life|
+| **2**| Felix the Cat | Everyday life |
+| **3**| Nurse sharks | Science |
 | **4**| Borage | Science |
-| **5**| Lake_Victoria | Geography |
+| **5**| Lake Victoria | Geography |
 
 
-In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday_life and Science. 
+In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday life and Science. 
 
 And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out [here](https://dlab.epfl.ch/wikispeedia/play/?article=Latin).
 
@@ -285,7 +285,7 @@ Well, so did we. From it's size on the map, we were able to determine it is the 
 
 What subject is so invaluable, so universal that it is the most connected article in the game? 
 
-The answer: Wikipedia_Text_of_the_GNU_Free_Documentation_License
+The answer: **Wikipedia_Text_of_the_GNU_Free_Documentation_License**
 
 It turns out that, at the bottom of every single Wikispeedia page, there is a link to this article about the Wikipeedia license. But, once you click on it, you'll find out that there are no hyperlinks on this page. You have found yourself in a dead end. 
 </details>
@@ -330,10 +330,10 @@ Nonetheless, to isolate the specific effect of backtracking, we performed Ordina
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
 | Intercept | 1.0532 | 0.025 | 41.833 | 0.000 | 1.004 | 1.103 |
-| Nbr_Backtrack | -0.2313 | 0.007 | -33.478 | 0.000 | -0.245 | -0.218 |
-| DurationInSec | 0.0017 | 5.31e-05 | 32.605 | 0.000 | 0.002 | 0.002 |
-| Path_Length | 0.1553 | 0.003 | 58.347 | 0.000 | 0.150 | 0.161 |
-| Shortest_Path_Length | 0.0074 | 0.008 | 0.951 | 0.341 | -0.008 | 0.023 |
+| Number of Backtracks | -0.2313 | 0.007 | -33.478 | 0.000 | -0.245 | -0.218 |
+| Duration In Seconds | 0.0017 | 5.31e-05 | 32.605 | 0.000 | 0.002 | 0.002 |
+| Path Length | 0.1553 | 0.003 | 58.347 | 0.000 | 0.150 | 0.161 |
+| Shortest Path Length | 0.0074 | 0.008 | 0.951 | 0.341 | -0.008 | 0.023 |
 
 
 Backtracking has a clear and substantial impact on how players perceive the difficulty of the game, but not in the way we expected. In the regression, the number of backtracks shows a strong negative coefficient (–0.23), meaning that each additional backtrack is associated with a lower difficulty rating once path length, duration, and shortest path length are controlled for. Backtacking is therefore a strong predictor of a lower difficulty scores. It seems then that our adventurers do not see retracing their steps as hard or punishing. It seems that backtracking actually makes them perceive the journey as easier. Perhaps they get more time to explore and get a more rewarding feeling when they actually manage to reach their destination.
@@ -354,10 +354,10 @@ Backtracking has a clear and substantial impact on how players perceive the diff
 | Variable | Coefficient | Std Error | t-value | P-value | [0.025 | 0.975] |
 |:---|:---|:---|:---|:---|:---|:---|
 | Intercept | 2.2618 | 0.006 | 410.609 | 0.000 | 2.251 | 2.273 |
-| Nbr_Backtrack | -0.2754 | 0.008 | -33.478 | 0.000 | -0.292 | -0.259 |
-| DurationInSec | 0.2412 | 0.007 | 32.605 | 0.000 | 0.227 | 0.256 |
-| Path_Length | 0.5768 | 0.010 | 58.347 | 0.000 | 0.557 | 0.596 |
-| Shortest_Path_Length | 0.0053 | 0.006 | 0.951 | 0.341 | -0.006 | 0.016 |
+| Number of Backtracks | -0.2754 | 0.008 | -33.478 | 0.000 | -0.292 | -0.259 |
+| Duration In Seconds | 0.2412 | 0.007 | 32.605 | 0.000 | 0.227 | 0.256 |
+| Path Length | 0.5768 | 0.010 | 58.347 | 0.000 | 0.557 | 0.596 |
+| Shortest Path Length | 0.0053 | 0.006 | 0.951 | 0.341 | -0.006 | 0.016 |
 
 
 To check that we accurately caught this effect, we even ran a second OLS with standardized coefficients to make sure that we were isolating the impact of backtracking on the same scale as the other variables. For ratings, the standardized effect of backtracking is strongly negative (β = –0.28). This means that, when all variables are expressed in standard deviation units, an increase of one standard deviation in the number of backtracks leads to a decrease of about 0.28 standard deviations in the perceived difficulty rating. Among all predictors, backtracking is the only negative driver of difficulty perception and one of the strongest predictors overall, second only to path length.

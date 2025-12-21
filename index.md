@@ -23,7 +23,7 @@ Now imagine you are given this map:
 </div>
 
 
-This is the task given to you in the game Wikispeedia: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 
+This is the task given to you in the game <a href="https://dlab.epfl.ch/wikispeedia/play/" target="_blank" rel="noopener noreferrer">Wikispeedia</a>.: you have to find your way from one article to another using only hyperlinks. On the map above, each dot is an article and each line represents a hyperlink from one to the other. When you start the game, you are dropped into your start article and you have to navigate in Wikipedia to your target article. The map is actually just in your mind. Understanding how users choose to navigate this network can be very informative about what subjects users believe relate to each other. 
 
 You can take a look at what that can look like here by choosing a past adventure other explorers have gone on:
 
@@ -214,8 +214,6 @@ Here are the top 5 articles that cause the most backtracking when they are the t
 
 
 In the list, the articles that appear are part of the categories that were highlighted on the heatmap as being problematic, such as Everyday life and Science. 
-
-And you, do you think you can do it without getting lost ? Would you have found your way to Borage ? Find out <a href="https://dlab.epfl.ch/wikispeedia/play/" target="_blank" rel="noopener noreferrer">here</a>.
 
 <br><br>
 

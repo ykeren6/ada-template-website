@@ -143,6 +143,12 @@ Why would that be a problem, you ask ?
 
 Well, since many sites share the same backtrack score, their ranking is no longer very meaningful if we focus on low scores. For example, take a site with a backtrack score of 1. Could you say precisely which index it should occupy in the dataframe? A normal person cannot know that. It could be element 1700 or 2400, depending of the ordrer that the code is processing the data. This will create a very significant variance and it's this aspect that greatly reduces correlation as values are added.
 
+So, taking these results into account, we were able to partially answer this first question: 
+
+where do we end up when we go back? 
+
+Well, we tend to end up at sites offering more possible paths to take, demonstrating that when lost and having to move into the unknown, we tend to want to identify the places offering the most possibilities in order to have the best chance of finding the right path.
+
 <br><br>
 
 ## Chapter 3 : Why are users backtracking?
